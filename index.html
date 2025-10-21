@@ -8,31 +8,25 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+ 
   <nav class="navbar">
    <div class="logo">Apna Tourist</div>
-   <div class="menu-toggle" id="menu-toggle">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
     <ul id="nav-links">
       <li><a href="#Home">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#tourist">Tourist Places</a></li>
       <li><a href="#map">Map</a></li>
-      <li><a href="#form">Account</a></li>
+      <li><a href="#account">Account</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+    <div class="hamburger" onclick="toggleMenu()">
+     <div></div><div></div><div></div>
+    </div>
  </nav>
 
   <div class="portfolio-container">
-    <section class="card">
-     
-    </section>
-
     <section id="about" class="card">
-      <div class="right">
-        <h2>About </h2>
+        <h2>About</h2>
         <div class="red-bar vertical"></div><br>
         <h3>“Travel made hassle-free with Apna Tourist!”</h3><br>
         <p>At some point during your journey, you may face problems — the food isn’t right, the room isn’t as expected, or the facilities are incomplete.
@@ -41,78 +35,78 @@
         <p>We provide services tailored to your needs and make every decision easy. Always by your side, our goal is to make your travel plans safe, convenient, and memorable.
          Apna Tourist — Your journey, our responsibility.
         </p>
+    </section>
+
+    <section id="tourist" class="card">
+      <h2>Tourist Place</h2>
+      <div class="red-bar vertical"></div><br>
+      <div class="tourist-plase">
+        <span><a href="#Rajsthan">Rajasthan</a></span><br>
+        <span><a href="#Jyotirlingas">Jyotirlingas</a></span><br>
+        <span><a href="#Punjab">Punjab</a></span><br>
+        <span><a href="#Uttar-pradesh">Uttar - Pradesh</a></span><br>
+        <span><a href="#Gujarat">Gujarat</a></span><br>
+        <span><a href="#Madhya-Pradesh">Madhya - Pradesh</a></span><br>
+        <span><a href="#Delhi">Delhi</a></span><br>
       </div>
     </section>
 
-    <section id="turist" class="card">
-      <h2>Tourist Place</h2>
-      <div class="red-bar vertical"></div><br>
-    </section>
-
-    <section class="card">
+    <section id="Rajsthan" class="card">
       <h3>Top 15 Tourist Places in Rajasthan</h3>
       <div class="red-bar vertical"></div>
       <div class="tourist-container">
-        <div class="tourist-container">
-          <span><a href="#jaisalmer">1. Jaisalmer (Golden City)</a></span><br>
-          <span><a href="#jodhpur">2. Jodhpur (Blue City)</a></span><br>
-          <span><a href="#ajmer">3. Ajmer</a></span><br>
-          <span><a href="#ranthambore">4. Ranthambore</a></span><br>
-          <span><a href="#Bikaner">5. Bikaner</a></span><br>
-          <span><a href="#Pushkar">6. Pushkar</a></span><br>
-          <span><a href="#bharatpur">7. Bharatpur</a></span><br>
-          <span><a href="#bundi">8. Bundi</a></span><br>
-          <span><a href="#sawai_Madhopur">9. Sawai Madhopur</a></span><br>
-          <span><a href="#chittorgarh">10. Chittorgarh</a></span><br>
-          <span><a href="#hanumangarh">11. Hanumangarh</a></span><br>
-          <span><a href="#jhunjhunu">12. Jhunjhunu</a></span><br>
-          <span><a href="#jaipur">13. Jaipur (pink city)</a></span><br>
-          <span><a href="#Udaipur">14. Udaipur (City of Lakes)</a></span><br>
-          <span><a href="#mount_abou">15. Mount Abou</a></span><br>
-        </div>
+        <span><a href="#jaisalmer">1. Jaisalmer (Golden City)</a></span><br>
+        <span><a href="#jodhpur">2. Jodhpur (Blue City)</a></span><br>
+        <span><a href="#ajmer">3. Ajmer</a></span><br>
+        <span><a href="#ranthambore">4. Ranthambore</a></span><br>
+        <span><a href="#Bikaner">5. Bikaner</a></span><br>
+        <span><a href="#Pushkar">6. Pushkar</a></span><br>
+        <span><a href="#bharatpur">7. Bharatpur</a></span><br>
+        <span><a href="#bundi">8. Bundi</a></span><br>
+        <span><a href="#sawai_Madhopur">9. Sawai Madhopur</a></span><br>
+        <span><a href="#chittorgarh">10. Chittorgarh</a></span><br>
+        <span><a href="#hanumangarh">11. Hanumangarh</a></span><br>
+        <span><a href="#jhunjhunu">12. Jhunjhunu</a></span><br>
+        <span><a href="#jaipur">13. Jaipur (pink city)</a></span><br>
+        <span><a href="#Udaipur">14. Udaipur (City of Lakes)</a></span><br>
+        <span><a href="#mount_abou">15. Mount Abou</a></span><br>
       </div>
     </section>
 
-    <section class="card">
-     <h3>12 Jyotirlingas in India</h3>
-     <div class="red-bar vertical"></div>
-     <div class="tourist-container">
-       <div class="tourist-container">
-         <span><a href="#somnath">1. Somnath – Veraval, Gujarat</a></span><br>
-         <span><a href="#mallikarjuna">2. Mallikarjuna – Srisailam, Andhra Pradesh</a></span><br>
-         <span><a href="#mahakaleshwar">3. Mahakaleshwar – Ujjain, Madhya Pradesh</a></span><br>
-         <span><a href="#omkareshwar">4. Omkareshwar – Khandwa, Madhya Pradesh</a></span><br>
-         <span><a href="#kedarnath">5. Kedarnath – Kedarnath, Uttarakhand</a></span><br>
-         <span><a href="#bhimashankar">6. Bhimashankar – Pune, Maharashtra</a></span><br>
-         <span><a href="#kashi_vishwanath">7. Kashi Vishwanath – Varanasi, Uttar Pradesh</a></span><br>
-         <span><a href="#trimbakeshwar">8. Trimbakeshwar – Nashik, Maharashtra</a></span><br>
-         <span><a href="#vaidyanath">9. Vaidyanath – Deoghar, Jharkhand / Parli, Maharashtra</a></span><br>
-         <span><a href="#nageshwar">10. Nageshwar – Dwarka, Gujarat</a></span><br>
-         <span><a href="#ramanathaswamy">11. Ramanathaswamy – Rameswaram, Tamil Nadu</a></span><br>
-         <span><a href="#grishneshwar">12. Grishneshwar – Ellora, Maharashtra</a></span><br>
-       </div>
-     </div>
-   </section>
+    <section id="Jyotirlingas" class="card">
+      <h3>12 Jyotirlingas in India</h3>
+      <div class="red-bar vertical"></div>
+      <div class="tourist-container">
+        <span><a href="#somnath">1. Somnath – Veraval, Gujarat</a></span><br>
+        <span><a href="#mallikarjuna">2. Mallikarjuna – Srisailam, Andhra Pradesh</a></span><br>
+        <span><a href="#mahakaleshwar">3. Mahakaleshwar – Ujjain, Madhya Pradesh</a></span><br>
+        <span><a href="#omkareshwar">4. Omkareshwar – Khandwa, Madhya Pradesh</a></span><br>
+        <span><a href="#kedarnath">5. Kedarnath – Kedarnath, Uttarakhand</a></span><br>
+        <span><a href="#bhimashankar">6. Bhimashankar – Pune, Maharashtra</a></span><br>
+        <span><a href="#kashi_vishwanath">7. Kashi Vishwanath – Varanasi, Uttar Pradesh</a></span><br>
+        <span><a href="#trimbakeshwar">8. Trimbakeshwar – Nashik, Maharashtra</a></span><br>
+        <span><a href="#vaidyanath">9. Vaidyanath – Deoghar, Jharkhand / Parli, Maharashtra</a></span><br>
+        <span><a href="#nageshwar">10. Nageshwar – Dwarka, Gujarat</a></span><br>
+        <span><a href="#ramanathaswamy">11. Ramanathaswamy – Rameswaram, Tamil Nadu</a></span><br>
+        <span><a href="#grishneshwar">12. Grishneshwar – Ellora, Maharashtra</a></span><br>
+      </div>
+    </section>
 
-
-     <section class="card">
-       <h3>Top 5 Tourist Places in Punjab</h3>
-       <div class="red-bar vertical"></div>
-       <div class="tourist-container">
-         <div class="tourist-container">
-           <span><a href="#golden_temple">1. Golden Temple (Harmandir Sahib), Amritsar</a></span><br>
-           <span><a href="#wagah_border">2. Wagah Border, Amritsar</a></span><br>
-           <span><a href="#jallianwala_bagh">3. Jallianwala Bagh, Amritsar</a></span><br>
-           <span><a href="#rock_garden">4. Rock Garden, Chandigarh</a></span><br>
-           <span><a href="#anandpur_sahib">5. Anandpur Sahib, Rupnagar</a></span><br>
-         </div>
-       </div>
+    <section id="Punjab" class="card">
+      <h3>Top 5 Tourist Places in Punjab</h3>
+      <div class="red-bar vertical"></div>
+      <div class="tourist-container">
+        <span><a href="#golden_temple">1. Golden Temple (Harmandir Sahib), Amritsar</a></span><br>
+        <span><a href="#wagah_border">2. Wagah Border, Amritsar</a></span><br>
+        <span><a href="#jallianwala_bagh">3. Jallianwala Bagh, Amritsar</a></span><br>
+        <span><a href="#rock_garden">4. Rock Garden, Chandigarh</a></span><br>
+        <span><a href="#anandpur_sahib">5. Anandpur Sahib, Rupnagar</a></span><br>
+      </div>
      </section>
 
-   <section class="card">
-     <h3>Top 7 Tourist Places in Uttar Pradesh</h3>
-     <div class="red-bar vertical"></div>
-     <div class="tourist-container">
+     <section id="Uttar - Pradesh" class="card">
+       <h3>Top 7 Tourist Places in Uttar Pradesh</h3>
+       <div class="red-bar vertical"></div>
        <div class="tourist-container">
          <span><a href="#taj_mahal">1. Taj Mahal, Agra</a></span><br>
          <span><a href="#varanasi">2. Varanasi (Kashi)</a></span><br>
@@ -122,13 +116,11 @@
          <span><a href="#ayodhya">6. Ayodhya</a></span><br>
          <span><a href="#sarnath">7. Sarnath (Near Varanasi)</a></span><br>
        </div>
-     </div>
-   </section>
+     </section>
 
-   <section class="card">
-     <h3>Top 7 Tourist Places in Gujarat</h3>
-     <div class="red-bar vertical"></div>
-      <div class="tourist-container">
+     <section id="Gujarat" class="card">
+       <h3>Top 7 Tourist Places in Gujarat</h3>
+       <div class="red-bar vertical"></div>
         <div class="tourist-container">
           <span><a href="#somnath_temple">1. Somnath Temple, Veraval</a></span><br>
           <span><a href="#rann_of_kutch">2. Rann of Kutch, Bhuj</a></span><br>
@@ -138,14 +130,12 @@
           <span><a href="#statue_of_unity">6. Statue of Unity, Kevadia</a></span><br>
           <span><a href="#saputara_hill_station">7. Saputara Hill Station, Dang</a></span><br>
         </div>
-      </div>
-   </section>
+     </section>
 
-   <section class="card">
-    <h3>Top 7 Tourist Places in Madhya Pradesh</h3>
-     <div class="red-bar vertical"></div>
-     <div class="tourist-container">
-       <div class="tourist-container">
+    <section id="Madhya - Pradesh" class="card">
+       <h3>Top 7 Tourist Places in Madhya Pradesh</h3>
+       <div class="red-bar vertical"></div>
+        <div class="tourist-container">
          <span><a href="#khajuraho_temples">1. Khajuraho Temples, Chhatarpur</a></span><br>
          <span><a href="#kanha_national_park">2. Kanha National Park, Mandla</a></span><br>
          <span><a href="#gwalior_fort">3. Gwalior Fort, Gwalior</a></span><br>
@@ -153,15 +143,13 @@
          <span><a href="#sanchi_stupa">5. Sanchi Stupa, Raisen</a></span><br>
          <span><a href="#pachmarhi_hill_station">6. Pachmarhi Hill Station</a></span><br>
          <span><a href="#bandhavgarh_national_park">7. Bandhavgarh National Park, Umaria</a></span><br>
-       </div>
-     </div>
+        </div>
     </section>
 
-    <section class="card">
-      <h3>Top 7 Tourist Places in Delhi</h3>
-      <div class="red-bar vertical"></div>
-      <div class="tourist-container">
-        <div class="tourist-container">
+    <section id="Delhi" class="card">
+       <h3>Top 7 Tourist Places in Delhi</h3>
+       <div class="red-bar vertical"></div>
+       <div class="tourist-container">
           <span><a href="#red_fort">1. Red Fort (Lal Qila)</a></span><br>
           <span><a href="#jama_masjid">2. Jama Masjid</a></span><br>
           <span><a href="#india_gate">3. India Gate</a></span><br>
@@ -170,8 +158,8 @@
           <span><a href="#humayun_tomb">6. Humayun’s Tomb</a></span><br>
           <span><a href="#akshardham_temple">7. Akshardham Temple</a></span><br>
         </div>
-      </div>
     </section>
+    
 
     <section id="jaisalmer" class="card">
       <h3>1.Jaisalmer(Golden City)</h3>
@@ -185,7 +173,6 @@
         <li><b>Bada Bagh – </b>Royal cenotaphs offering breathtaking views, especially during sunset.</li><br>
       </ol>
     </section>
-
 
     <section id="jodhpur" class="card">
       <h3>2. Jodhpur (Blue City)</h3>
@@ -368,20 +355,19 @@
         <li><b>Sunset Point – </b>A popular viewpoint offering breathtaking views of the sun setting over the Aravalli hills and valleys.</li><br>
       </ol>
     </section>
-
     <section id="contact" class="card">
       <h3>contact</h3>
        <div class="red-bar vertical"></div><br>
       <div class="social-links">
         <a href=""><i class="fa-brands fa-instagram"></i></a>  <a href=""><i class="fa-solid fa-phone-volume"></i></a>  <a href=""><i class="fa-solid fa-envelope"></i></a>  <a href=""><i class="fa-solid fa-comments"></i></a>
-    </div>
-  </section>
-  
+     </div>
+   </section>
+
+  <script>script.js</script>
   </div>
 
   <footer>
   <p>© 2025 Apna Tourist | All Rights Reserved</p>
 </footer>
-
 </body>
 </html>

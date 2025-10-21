@@ -4,6 +4,13 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
+section {
+  scroll-margin-top: 100px; 
+}
+
 
 body {
   background: #f4f4f4;
@@ -32,48 +39,28 @@ nav {
   padding: 15px 40px;
   position: sticky;
   top: 0;
-  height: 120px;
-  z-index: 1000;
+  width: 100%;
+  height: 80px;
+  z-index: 100;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
-
-
-.nav-links li a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.nav-links li a:hover {
-  color: #FFD700; 
-}
-nav .logo {
+.logo {
   font-size: 22px;
   font-weight: bold;
   letter-spacing: 1px;
 }
-
 nav ul {
   list-style: none;
   display: flex;
   gap: 25px;
-  margin: 0;
-  padding: 0;
 }
-
-nav ul li {
- display: inline;
-}
-
 nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: 500;
-  transition: 0.3s;
 }
 
-nav ul li a:hover {
+a:hover {
   color: #ff9800;
   text-decoration: underline;
 } 
@@ -85,6 +72,7 @@ nav ul li a:hover {
   box-shadow: 0 2px 10px rgba(0,0,0,0.08);
   position: relative;
   overflow: hidden;
+  margin-top: 5px;
 }
 
 .card h2 {
@@ -110,7 +98,17 @@ img {
   object-fit: cover; 
   border-radius: 10px;                         
 }
-
+.hamburger {
+  display:none;
+  flex-direction:column;
+  cursor:pointer;
+}
+.hamburger div {
+  width:25px;
+  height:3px;
+  background:#fff;
+  margin:4px;
+}
 
 .red-bar {
   background: #8b0000;
@@ -131,18 +129,29 @@ img {
   align-items: center;
   gap: 2rem;
 }
-
-.about .left {
+.tourist-plase {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
 }
 
-.about .right {
-  flex: 1;
+.tourist-plase span {
+  background-color:burlywood; 
+  border: #b67d14e0 solid 2px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-align: center;
+  flex: 1 0 180px;
 }
-
+.tourist-plase a{
+  text-decoration: none;
+   color: rgb(85, 26, 139);
+}
+.tourist-plase span:hover {
+  scroll-behavior: smooth;
+}
 p{
   font-size: 15px;
   text-transform: capitalize;
@@ -272,9 +281,10 @@ b{
   margin-left: 40px;
 }
 .social-links a i{
-    size: 20px;
+ size: 20px;
 
 }
+
 footer {
     background-color: gray; 
     color: white;
@@ -285,7 +295,6 @@ footer {
     width: 100%;
     bottom: 0;
 }
-
 
 @media (max-width: 768px) {
    nav ul {
@@ -309,3 +318,4 @@ footer {
     height: 5px;
   }
 }
+
