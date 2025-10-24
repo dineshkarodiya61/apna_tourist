@@ -1,31 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Apna Tourist</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
- 
+
   <nav class="navbar">
-   <div class="logo">Apna Tourist</div>
+    <div class="logo">Apna Tourist</div>
     <ul id="nav-links">
       <li><a href="#Home">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#tourist">Tourist Places</a></li>
       <li><a href="#contact">Contact</a></li>
       <li><a href="#map">Map</a></li>
-      <li><button class="Account">Carict Account</button></li>
+      <li><button class="Account" id="createAccountBtn"> Carict Account</button></li>
       <li><button class="Login">Login</button></li>
     </ul>
-    <div class="hamburger" onclick="toggleMenu()">
-     <div></div><div></div><div></div>
+  </nav>
+  <div id="accountModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <h2>Create Account</h2>
+      <form id="accountForm">
+        <div class="field"><label>First Name*</label><input type="text" id="fname" required></div>
+        <div class="field"><label>Last Name</label><input type="text" id="lname"></div>
+        <div class="field"><label>Contact Number*</label><input type="tel" id="contact" maxlength="10" required></div>
+        <div class="field"><label>Email*</label><input type="email" id="email" required></div>
+        <div class="field"><label>Password*</label><input type="password" id="pass" minlength="8" maxlength="16" required></div>
+        <div class="field"><label>Confirm Password*</label><input type="password" id="cpass" required></div>
+        <div class="actions">
+          <button type="submit" id="submitBtn">Submit</button>
+          <button type="button" id="loginBtn">Login</button>
+          <button type="button" id="backBtn">Back</button>
+        </div>
+      </form>
     </div>
- </nav>
-
-  <div class="portfolio-container">
+  </div>
+   <div class="portfolio-container">
     <section id="about" class="card">
         <h2>About</h2>
         <div class="red-bar vertical"></div><br>
@@ -701,14 +716,12 @@
         <a href=""><i class="fa-brands fa-instagram"></i></a>  <a href=""><i class="fa-solid fa-phone-volume"></i></a>  <a href=""><i class="fa-solid fa-envelope"></i></a>  <a href=""><i class="fa-solid fa-comments"></i></a>
      </div>
    </section>
-   
-
-
-  <script>script.js</script>
   </div>
-
+  <script>script.js</script>
   <footer>
   <p>© 2025 Apna Tourist | All Rights Reserved</p>
 </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
