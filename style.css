@@ -10,8 +10,6 @@ html {
 section {
   scroll-margin-top: 100px; 
 }
-
-
 body {
   background: #f4f4f4;
   color: #333;
@@ -74,11 +72,27 @@ a:hover {
   overflow: hidden;
   margin-top: 5px;
 }
+button{
+  font-weight: bold;
+  width: 100px;
+  height: 30px;
+  color: whitesmoke;
+  background-color: #ff9800;
+  background-position: center;
+  border-color: #f4f4f4;
+  font-weight: bold;
 
+}
+button:click{
+  background-color: rgb(176, 122, 13);
+}
 .card h2 {
   font-size: 2.8rem;
   margin-bottom: 1rem;
   color: #111;
+}
+button:click{
+  background-color: #333;
 }
 
 .card h3 {
