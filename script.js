@@ -46,3 +46,9 @@ window.onclick = (event) => {
   if (event.target == forgotModal) forgotModal.style.display = "none";
 };
 
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("nav-links");
+
+menuToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
