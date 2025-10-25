@@ -234,7 +234,7 @@ button:click{
 }
 .tourist-plase a{
   text-decoration: none;
-   color: rgb(85, 26, 139);
+  color: rgb(85, 26, 139);
 }
 .tourist-plase span:hover {
   scroll-behavior: smooth;
