@@ -4,26 +4,26 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: #f5f7fa;
-}
 html {
   scroll-behavior: smooth;
 }
 section {
   scroll-margin-top: 100px; 
 }
- .navbar {
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
   background-image: url(images/image.png);
   background-size: cover;    
   background-position: center;
   background-repeat: no-repeat;
-  display: flex;
-  background-color: #000;
-  align-items: center;
-  color: #fff;
   justify-content: space-between;
   padding: 15px 40px;
   position: sticky;
@@ -33,107 +33,128 @@ section {
   z-index: 100;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
-#nav-links { display: flex; gap: 25px; list-style: none; margin: 0; padding: 0; }
-#nav-links a, #nav-links button { text-decoration: none; background: none; border: none; color: white; font-size: 16px; font-weight: bold; cursor: pointer; }
-#nav-links a:hover, #nav-links button:hover { color: #00ff9d; }
 
-.hamburger {
-  display: none; 
-  font-size: 28px; 
-  cursor: pointer; 
-}
-.close-btn {
-  position: absolute;
-  top: 15px; 
-  right: 20px; 
-  font-size: 30px; 
-  cursor: pointer; 
-  color: white; 
+.navbar .logo {
+  font-size: 32px;
+  font-weight: bold;
+  color: #ffcc00;
 }
 
 .navbar ul {
   list-style: none;
   display: flex;
-  gap: 15px;
+  align-items: center;
   margin: 0;
   padding: 0;
+  gap: 15px; 
 }
+
+.navbar ul li {
+  display: inline-block;
+}
+
 .navbar ul li a,
 .navbar ul li button {
+  text-decoration: none;
   color: white;
-  background: none;
+  background: transparent;
   border: none;
   cursor: pointer;
-  font-size: 15px;
-  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
 }
+
+.navbar ul li a:hover,
 .navbar ul li button:hover {
-  color: #ffcc00;
+  color: #ffcccb;
 }
-.logo {
-  font-size: 32px;
-  font-weight: bold;
-  color: #ffcc00;
+
+.Account,
+.Login {
+  background: white;
+  color: #e63946;
+  border-radius: 5px;
+  padding: 6px 12px;
+  border: none;
+  transition: 0.3s;
+}
+
+.Account:hover,
+.Login:hover {
+  background: #ffcccb;
+  color: #fff;
 }
 .modal {
   display: none;
   position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0,0,0,0.5);
-  justify-content: center; align-items: center;
-  z-index: 1000;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
 }
+
 .modal-content {
-  background: white;
-  padding: 25px;
-  border-radius: 12px;
-  width: 90%;
-  max-width: 400px;
-  position: relative;
+  background-color: #fff;
+  margin: 8% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
-.close {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 22px;
-  cursor: pointer;
-  color: #888;
+
+.modal-content h2 {
+  text-align: center;
+  color: #e63946;
 }
+
 .field {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
 }
-.field label {
-  font-weight: 600;
+
+label {
+  display: block;
+  font-weight: bold;
   margin-bottom: 5px;
 }
-.field input {
+
+input {
+  width: 100%;
   padding: 8px;
+  border-radius: 5px;
   border: 1px solid #ccc;
-  border-radius: 6px;
 }
+
 .actions {
   display: flex;
   justify-content: space-between;
-  margin-top: 15px;
 }
+
 .actions button {
   flex: 1;
   margin: 5px;
-  padding: 10px;
+  padding: 8px;
   border: none;
-  border-radius: 6px;
-  font-weight: 600;
+  border-radius: 5px;
   cursor: pointer;
-  transition: 0.3s;
 }
+
 #submitBtn { background: #007bff; color: #fff; }
 #loginBtn { background: #28a745; color: #fff; }
 #backBtn { background: #ccc; color: #000; }
 #submitBtn:hover { background: #22bb33; }
 
+.close {
+  float: right;
+  font-size: 22px;
+  cursor: pointer;
+  color: #e63946;
+}
+
+.close:hover {
+  color: black;
+}
 .portfolio-container {
   width: 90%;
   max-width: 1100px;
@@ -513,29 +534,13 @@ footer {
 }
 
 @media (max-width: 768px) {
-   nav ul {
-    display: none;
-    width: 100%;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    padding: 10px 0;
-  }
   .about {
     flex-direction: column;
     text-align: center;
-  }
-  .hamburger {
-    display: block;
   }
   .red-bar.vertical {
     position: static;
     width: 100%;
     height: 5px;
   }
-
-  #nav-links {
-    display: none; 
-  }
-  #nav-links {display: none;}
-}
+} 

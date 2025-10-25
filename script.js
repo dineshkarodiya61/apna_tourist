@@ -1,33 +1,48 @@
 document.querySelector('.card#about').addEventListener('mouseenter', () => {
-  document.querySelector('.card#about').scrollIntoView({ behavior: 'smooth', block: 'start' });
+document.querySelector('.card#about').scrollIntoView({ behavior: 'smooth', block: 'start' });
 });
 
-const createBtn = document.getElementById('createAccountBtn');
-const modal = document.getElementById('accountModal');
-const closeModal = document.getElementById('closeModal');
-const backBtn = document.getElementById('backBtn');
-const accountForm = document.getElementById('accountForm');
-const loginBtn = document.getElementById('loginBtn');
+const accountModal = document.getElementById("accountModal");
+const loginModal = document.getElementById("loginModal");
+const forgotModal = document.getElementById("forgotModal");
 
-createBtn.addEventListener('click', () => {
-  modal.style.display = 'flex';
-});
+const createAccountBtn = document.getElementById("createAccountBtn");
+const loginModalBtn = document.getElementById("loginModalBtn");
 
-closeModal.addEventListener('click', () => {
-  modal.style.display = 'none';
-});
-backBtn.addEventListener('click', () => {
-  modal.style.display = 'none';
-});
-window.addEventListener('click', (e) => {
-  if (e.target === modal) modal.style.display = 'none';
-});
-accountForm.addEventListener('submit', (e) => {
-  e.preventDefault();
-  alert('Account Created Successfully!');
-  modal.style.display = 'none';
-});
-loginBtn.addEventListener('click', () => {
-  alert('Redirecting to Login...');
-  modal.style.display = 'none';
-});
+const closeAccountModal = document.getElementById("closeAccountModal");
+const closeLoginModal = document.getElementById("closeLoginModal");
+const closeForgotModal = document.getElementById("closeForgotModal");
+
+const backBtn = document.getElementById("backBtn");
+const goLogin = document.getElementById("goLogin");
+const backLogin = document.getElementById("backLogin");
+const forgotBtn = document.getElementById("forgotBtn");
+const backForgot = document.getElementById("backForgot");
+
+createAccountBtn.onclick = () => accountModal.style.display = "block";
+loginModalBtn.onclick = () => loginModal.style.display = "block";
+
+closeAccountModal.onclick = () => accountModal.style.display = "none";
+closeLoginModal.onclick = () => loginModal.style.display = "none";
+closeForgotModal.onclick = () => forgotModal.style.display = "none";
+
+backBtn.onclick = () => accountModal.style.display = "none";
+backLogin.onclick = () => loginModal.style.display = "none";
+backForgot.onclick = () => forgotModal.style.display = "none";
+
+goLogin.onclick = () => {
+  accountModal.style.display = "none";
+  loginModal.style.display = "block";
+};
+
+forgotBtn.onclick = () => {
+  loginModal.style.display = "none";
+  forgotModal.style.display = "block";
+};
+
+window.onclick = (event) => {
+  if (event.target == accountModal) accountModal.style.display = "none";
+  if (event.target == loginModal) loginModal.style.display = "none";
+  if (event.target == forgotModal) forgotModal.style.display = "none";
+};
+
