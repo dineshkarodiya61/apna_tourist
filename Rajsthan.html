@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rajsthan | Apna Tourist</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Apna Tourist</div>
+     <div class="menu-toggle" id="menuToggle">☰</div>
+    <ul id="nav-links">
+      <li><a href="#Home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#tourist">Tourist Places</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#map">Map</a></li>
+      <li><button class="Account" id="createAccountBtn">Create Account</button></li>
+      <li><button class="Login" id="loginModalBtn">Login</button></li>
+    </ul>
+  </nav>
+  <div id="accountModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeAccountModal">&times;</span>
+      <h2>Create Account</h2>
+      <form id="accountForm">
+        <div class="field"><label>First Name*</label><input type="text" id="fname" required></div>
+        <div class="field"><label>Last Name</label><input type="text" id="lname"></div>
+        <div class="field"><label>Contact Number*</label><input type="tel" id="contact" maxlength="10" required></div>
+        <div class="field"><label>Email*</label><input type="email" id="email" required></div>
+        <div class="field"><label>Password*</label><input type="password" id="pass" minlength="8" maxlength="16" required></div>
+        <div class="field"><label>Confirm Password*</label><input type="password" id="cpass" required></div>
+        <div class="actions">
+          <button type="submit" id="submitBtn">Submit</button>
+          <button type="button" id="goLogin">Login</button>
+          <button type="button" id="backBtn">Back</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeLoginModal">&times;</span>
+      <h2>Login</h2>
+      <form id="loginForm">
+        <div class="field"><label>Email*</label><input type="email" id="loginEmail" required></div>
+        <div class="field"><label>Password*</label><input type="password" id="loginPassword" required></div>
+        <div class="actions">
+          <button type="submit">Login</button>
+          <button type="button" id="backLogin">Back</button>
+          <button type="button" id="forgotBtn">Forgot Password</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div id="forgotModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeForgotModal">&times;</span>
+      <h2>Forgot Password</h2>
+      <form id="forgotForm">
+        <div class="field">
+          <label>Enter your registered email</label>
+          <input type="email" id="forgotEmail" required>
+        </div>
+        <div class="actions">
+          <button type="submit">Send Reset Link</button>
+          <button type="button" id="backForgot">Back</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+    <section id="tourist" class="card">
+      <h2>Tourist Place</h2>
+      <div class="red-bar vertical"></div><br>
+      <div class="tourist-plase">
+        <span><a href="Rajsthan.html">Rajasthan</a></span><br>
+        <span><a href="Jyotirlingas.html">Jyotirlingas</a></span><br>
+        <span><a href="Punjab.html">Punjab</a></span><br>
+        <span><a href="Uttar_pradesh.html">Uttar - Pradesh</a></span><br>
+        <span><a href="Gujarat.html">Gujarat</a></span><br>
+        <span><a href="Madhya_Pradesh.html">Madhya - Pradesh</a></span><br>
+        <span><a href="Delhi.html">Delhi</a></span><br>
+      </div>
+    </section>
+     <section id="Rajsthan" class="card">
+      <h3>Top 15 Tourist Places in Rajasthan</h3>
+      <div class="red-bar vertical"></div>
+      <div class="tourist-container">
+        <span><a href="#jaisalmer">1. Jaisalmer (Golden City)</a></span><br>
+        <span><a href="#jodhpur">2. Jodhpur (Blue City)</a></span><br>
+        <span><a href="#ajmer">3. Ajmer</a></span><br>
+        <span><a href="#ranthambore">4. Ranthambore</a></span><br>
+        <span><a href="#Bikaner">5. Bikaner</a></span><br>
+        <span><a href="#Pushkar">6. Pushkar</a></span><br>
+        <span><a href="#bharatpur">7. Bharatpur</a></span><br>
+        <span><a href="#bundi">8. Bundi</a></span><br>
+        <span><a href="#sawai_Madhopur">9. Sawai Madhopur</a></span><br>
+        <span><a href="#chittorgarh">10. Chittorgarh</a></span><br>
+        <span><a href="#hanumangarh">11. Hanumangarh</a></span><br>
+        <span><a href="#jhunjhunu">12. Jhunjhunu</a></span><br>
+        <span><a href="#jaipur">13. Jaipur (pink city)</a></span><br>
+        <span><a href="#Udaipur">14. Udaipur (City of Lakes)</a></span><br>
+        <span><a href="#mount_abou">15. Mount Abou</a></span><br>
+      </div>
+    </section>
+    <section id="jaisalmer" class="card">
+      <h3>1.Jaisalmer(Golden City)</h3>
+      <div class="red-bar vertical"></div>
+      <h4>Top 5 Tourist Places in Jaisalmer</h4>
+      <ol class="jaisalmer">
+        <li><b>Jaisalmer Fort (Sonar Quila) – </b>The iconic “Golden Fort” made of yellow sandstone, glowing beautifully under the sun.</li><br>
+        <li><b>Patwon Ki Haveli – </b>A masterpiece of architecture with intricate carvings and detailed balconies.</li><br>
+        <li><b>Sam Sand Dunes - </b>Experience camel rides, sunset views, and desert camping under starry skies.</li><br>
+        <li><b>Gadisar Lake – </b>A serene spot for boating and photography, surrounded by temples and ghats.</li><br>
+        <li><b>Bada Bagh – </b>Royal cenotaphs offering breathtaking views, especially during sunset.</li><br>
+      </ol>
+    </section>
+
+    <section id="jodhpur" class="card">
+      <h3>2. Jodhpur (Blue City)</h3>
+      <div class="red-bar vertical"></div>
+      <h4>Top 5 Tourist Places in Jodhpur (The Blue City of Rajasthan).</h4>
+      <ol class="jodhpur">
+        <li><b>Mehrangarh Fort – </b>One of India’s largest forts, offering panoramic views of the blue city and showcasing royal artifacts and weapons.</li><br>
+        <li><b>Jaswant Thada – </b>A beautiful marble cenotaph built in memory of Maharaja Jaswant Singh II, surrounded by serene gardens and a lake.</li><br>
+        <li><b>Umaid Bhawan Palace – </b>A majestic palace that serves as a royal residence, museum, and luxury hotel — a symbol of Jodhpur’s royal heritage.</li><br>
+        <li><b>Mandore Garden – </b>Ancient cenotaphs, temples, and lush gardens representing the historic Marwar rulers.</li><br>
+        <li><b>Clock Tower & Sardar Market – </b> A vibrant local market near the iconic clock tower, famous for handicrafts, spices, and Rajasthani textiles.</li>
+      </ol>
+    </section>
+
+    <section id="ranthambore" class="card">
+      <h3>4. Ranthambore</h3>
+      <div class="red-bar vertical"></div>
+      <h4>Top 5 Tourist Places in Ranthambore (Rajasthan)</h4>
+      <ol class="ranthambore">
+        <li><b>Ranthambore National Park – </b>One of India’s most famous wildlife sanctuaries, known for Bengal tigers, leopards, and rich biodiversity.</li><br>
+        <li><b>Ranthambore Fort – </b>A UNESCO World Heritage Site located within the national park, offering historic ruins and breathtaking views.</li><br>
+        <li><b>Padam Talao – </b>The largest lake in the park, famous for the picturesque Jogi Mahal and sightings of animals near the water.</li><br>
+        <li><b>Surwal Lake – </b>A seasonal lake and a paradise for birdwatchers, especially during winter.</li><br>
+        <li><b>Trinetra Ganesh Temple – </b> An ancient and sacred temple inside Ranthambore Fort, dedicated to Lord Ganesha with three eyes (“Trinetra”).</li><br>
+      </ol>
+    </section>
+ 
+    <section id="Bikaner" class="card">
+      <h3>5. Bikaner</h3>
+      <div class="red-bar vertical"></div>
+      <h4>Top 5 Tourist Places in Bikaner (Rajasthan)</h4>
+      <ol class="bikaner">
+        <li><b>Junagarh Fort – </b>A magnificent fort built in the 16th century, famous for its intricate carvings, palaces, and marble courtyards.</li><br>
+        <li><b>National Research Centre on Camel (Camel Breeding Farm) – </b>A unique place to learn about camels, enjoy camel rides, and even taste camel milk products.</li><br>
+        <li><b>Karni Mata Temple (Deshnok Temple) – </b>Also known as the “Rat Temple,” where thousands of holy rats are worshipped as sacred.</li><br>
+        <li><b>Laxmi Niwas Palace – </b> A grand palace built by Maharaja Ganga Singh, now a luxury heritage hotel showcasing Indo-Saracenic architecture.</li><br>
+        <li><b>Gajner Palace & Wildlife Sanctuary – </b>A stunning lakeside palace surrounded by lush greenery and a sanctuary with peacocks and antelopes.</li><br>
+      </ol>
+    </section> 
+
+    <section id="Pushkar" class="card">
+      <h3>6. Pushkar</h3>
+      <div class="red-bar vertical"></div>
+      <h4>Top 5 Tourist Places in Pushkar (Rajasthan)</h4>
+      <ol class="pushkar">
+        <li><b>Pushkar Lake – </b>A sacred lake surrounded by 52 ghats, where pilgrims take holy dips and perform rituals.</li><br>
+        <li><b>Brahma Temple – </b>The only temple in the world dedicated to Lord Brahma, making it the spiritual heart of Pushkar.</li><br>
+        <li><b>Pushkar Camel Fair – </b>A world-famous annual event featuring camel trading, folk music, cultural shows, and traditional Rajasthani festivities.</li><br>
+        <li><b>Savitri Temple – </b>Situated on a hilltop, offering a beautiful panoramic view of Pushkar town and the lake, especially during sunrise or sunset.</li><br>
+        <li><b>Pushkar Bazaar – </b>A colorful local market known for handicrafts, jewelry, leather goods, and Rajasthani souvenirs.</li><br>
+      </ol>
+    </section>
+
+    <section id="bharatpur" class="card">
+      <h3>7. Bharatpur</h3>
+      <div class="red-bar vertical"></div>
+      <h4> Top 5 Tourist Places in Bharatpur (Rajasthan)</h4>
+      <ol class="bharatpur">
+        <li><b>Keoladeo National Park (Bharatpur Bird Sanctuary) – </b>A UNESCO World Heritage Site famous for migratory birds, wetlands, and rich biodiversity.</li><br>
+        <li><b>Bharatpur Palace (Lal Mahal & Government Museum) – </b>Historical palace showcasing royal architecture, artifacts, and museum collections.</li><br>
+        <li><b>Deeg Palace and Gardens – </b>A beautiful 18th-century palace with stunning fountains, gardens, and Mughal-style architecture.</li><br>
+        <li><b>Ganga Mandir – </b>A serene temple dedicated to Goddess Ganga, visited by locals and tourists alike.</li><br>
+        <li><b> Keoladeo Ghana National Park Nature Trails – </b>Walking and cycling trails inside the park for birdwatching and experiencing nature up close.</li><br>
+      </ol>
+    </section>
+
+    <section id="bundi" class="card">
+      <h3>8. Bundi</h3>
+      <div class="red-bar vertical"></div>
+      <h4>Top 5 Tourist Places in Bundi (Rajasthan)</h4>
+      <ol class="bundi">
+        <li><b>Bundi Palace (Garh Palace) – </b>Famous for its beautiful murals, frescoes, and grand architecture overlooking the city.</li><br>
+        <li><b>Taragarh Fort – </b>A massive hill fort offering panoramic views of Bundi, known for its impressive gateways and water reservoirs.</li><br>
+        <li><b>Sukh Mahal & Raniji ki Baori – </b>Historic stepwells with intricate carvings, showcasing the ancient water management system.</li><br>
+        <li><b>Chitrashala – </b>Located inside Bundi Palace, this hall is famous for miniature paintings depicting the life and culture of Bundi.</li><br>
+        <li><b>Nawal Sagar Lake – </b>A serene lake surrounded by hills and temples, perfect for evening walks and photography.</li><br>
+      </ol>
+    </section> 
+
+    <section id="sawai_Madhopur" class="card">
+      <h3>9. Sawai Madhopur</h3>
+      <div class="red-bar vertical"></div>
+      <h4>Top 5 Tourist Places in Sawai Madhopur (Rajasthan)</h4>
+      <ol class="sawai_Madhopur">
+        <li><b>Ranthambore National Park – </b>One of India’s premier tiger reserves, famous for wildlife safaris and spotting Bengal tigers in their natural habitat.</li><br>
+        <li><b>Ranthambore Fort – </b>A historic fort inside the national park, offering panoramic views and ancient ruins.</li><br>
+        <li><b>Padam Talao – </b>The largest lake within Ranthambore National Park, ideal for wildlife sightings and photography.</li><br>
+        <li><b>Trinetra Ganesh Temple – </b>An ancient temple inside Ranthambore Fort dedicated to Lord Ganesha with three eyes.</li><br>
+        <li><b>Rajiv Gandhi Regional Museum of Natural History – </b>A museum showcasing flora, fauna, and environmental education about the region.</li><br>
+      </ol>
+    </section>
+
+    <section id="chittorgarh" class="card">
+      <h3>10. Chittorgarh</h3>
+      <div class="red-bar vertical"></div>
+      <h4>Top 5 Tourist Places in Chittorgarh (Rajasthan)</h4>
+      <ol class="chittorgarh">
+        <li><b>Chittorgarh Fort – </b>One of the largest forts in India, a UNESCO World Heritage Site, known for its historic battles and majestic architecture.</li><br>
+        <li><b>Vijay Stambh (Victory Tower) – </b>A 9-story tower built by Rana Kumbha to commemorate his victory over the armies of Malwa and Gujarat.</li><br>
+        <li><b>Kirti Stambh (Tower of Fame) – </b>A Jain tower dedicated to Adinath, beautifully carved with detailed sculptures.</li><br>
+        <li><b>Padmini Palace & Padmini’s Garden – </b>Legendary palace of Queen Padmini, famous for its romantic tales and scenic views.</li><br>
+        <li><b>Rana Kumbha Palace – </b>Historic royal palace within Chittorgarh Fort, showcasing the grandeur of Rajput architecture.</li><br>
+      </ol>
+    </section>
+
+    <section id="hanumangarh" class="card">
+      <h3>11.  Hanumangarh</h3>
+      <div class="red-bar vertical"></div>
+      <h4>Top 5 Tourist Places in Hanumangarh (Rajasthan) </h4>
+      <ol class="hanumangarh">
+        <li><b>Bhatner Fort – </b>An ancient fort built around 2550 years ago, showcasing historical architecture and offering panoramic views of the city.</li><br>
+        <li><b>Gaghar River Bank – </b>Scenic riverbanks ideal for picnics, photography, and enjoying the natural surroundings.</li><br>
+        <li><b>Shiv Mandir (Hanumangarh) – </b> A popular temple dedicated to Lord Shiva, attracting devotees from nearby areas.</li><br>
+        <li><b>Nihal Singh Wala Ghat – </b>A serene spot along the river, known for its peaceful ambiance and local cultural experiences.</li><br>
+        <li><b>Harsh Ka Tila – </b>Archaeological site with ruins dating back to ancient civilizations, offering insights into the region’s history.</li><br>
+      </ol>
+    </section>
+
+    <section id="jhunjhunu" class="card">
+      <h3>12. Jhunjhunu</h3>
+      <div class="red-bar vertical"></div><br>
+      <h4>Top 5 Tourist Places in Jhunjhunu (Rajasthan)</h4>
+      <ol class="jhunjhunu">
+        <li><b>Rani Sati Temple – </b>A famous and historic temple dedicated to Rani Sati, attracting thousands of devotees every year.</li><br>
+        <li><b>Mandawa Fort – </b>Known for its beautiful havelis and murals, showcasing the rich art and architecture of Shekhawati region.</li><br>
+        <li><b>Chokhani Haveli – </b>A heritage haveli famous for its intricate frescoes and traditional Rajasthani architecture.</li><br>
+        <li><b>Khetri Mahal (Wind Palace of Khetri) – </b>A stunning palace with unique design, reflecting the grandeur of the local royalty.</li><br>
+        <li><b>Mansarovar Lake – </b>A serene lake offering scenic views, perfect for evening visits and photography.</li><br>
+      </ol>
+    </section>
+
+    <section id="jaipur" class="card">
+      <h3>13. Jaipur (pink city)</h3>
+      <div class="red-bar vertical"></div><br>
+      <h4>Top 5 Tourist Places in Jaipur (Rajasthan)</h4>
+      <ol class="jaipur">
+        <li><b>Amber Fort (Amer Fort) – </b>A majestic fort with stunning architecture, located on a hill, offering panoramic views and elephant rides.</li><br>
+        <li><b>City Palace – </b>A beautiful palace complex in the heart of Jaipur, showcasing royal artifacts, courtyards, and museums.</li><br>
+        <li><b>Hawa Mahal (Palace of Winds) – </b>Iconic pink sandstone palace with unique latticed windows, built for royal women to observe street life.</li><br>
+        <li><b>Jantar Mantar – </b>An astronomical observatory with giant instruments, recognized as a UNESCO World Heritage Site.</li><br>
+        <li><b>Nahargarh Fort – </b>Hilltop fort offering breathtaking views of Jaipur city, especially beautiful at sunset.</li><br>
+      </ol>
+    </section>
+
+    <section id="Udaipur" class="card">
+      <h3>14. Udaipur (City of Lakes)</h3>
+      <div class="red-bar vertical"></div><br>
+      <h4>Top 5 Tourist Places in Udaipur (Rajasthan)</h4>
+      <ol class="udaipur">
+        <li><b>City Palace – </b>A grand palace complex overlooking Lake Pichola, famous for its beautiful architecture, museums, and courtyards.</li><br>
+        <li><b>Lake Pichola – </b>A picturesque lake offering boat rides with views of palaces, temples, and ghats along its banks.</li><br>
+        <li><b>Jag Mandir Palace – </b>An island palace in Lake Pichola known for its stunning architecture and serene surroundings.</li><br>
+        <li><b>Jagdish Temple – </b>A historic Hindu temple dedicated to Lord Vishnu, renowned for its intricate carvings.</li><br>
+        <li><b>Saheliyon Ki Bari – </b>A beautiful garden with fountains, lotus pools, and marble pavilions, built for the royal ladies.</li><br>
+      </ol>
+    </section>
+
+    <section id="mount_abou" class="card">
+      <h3>15. Mount Abou </h3>
+      <div class="red-bar vertical"></div><br>
+      <h4>Top 5 Tourist Places in Mount Abu (Rajasthan)</h4>
+      <ol class="mount_abou">
+        <li><b>Dilwara Jain Temples – </b>Famous for their stunning marble architecture and intricate carvings, considered masterpieces of Jain art.</li><br>
+        <li><b>Nakki Lake – </b>A serene lake surrounded by hills, perfect for boating and relaxing amidst nature.</li><br>
+        <li><b>Guru Shikhar – </b>The highest peak in the Aravalli Range, offering panoramic views and the Guru Dattatreya temple at the summit.</li><br>
+        <li><b>Mount Abu Wildlife Sanctuary – </b>Home to leopards, sloth bears, and various bird species, ideal for nature walks and wildlife spotting.</li><br>
+        <li><b>Sunset Point – </b>A popular viewpoint offering breathtaking views of the sun setting over the Aravalli hills and valleys.</li><br>
+      </ol>
+    </section>
+    <section id="contact" class="card">
+      <h3>Contact</h3>
+      <div class="red-bar vertical"></div><br>
+      <div class="social-links">
+        <a href=""><i class="fa-brands fa-instagram"></i></a>  <a href=""><i class="fa-solid fa-phone-volume"></i></a>  <a href=""><i class="fa-solid fa-envelope"></i></a>  <a href=""><i class="fa-solid fa-comments"></i></a>
+     </div>
+   </section>
+  </div>
+  <footer>
+   <p>© 2025 Apna Tourist | All Rights Reserved</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

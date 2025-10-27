@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Madhya_Pradesh | Apna Tourist</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Apna Tourist</div>
+     <div class="menu-toggle" id="menuToggle">☰</div>
+    <ul id="nav-links">
+      <li><a href="#Home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#tourist">Tourist Places</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#map">Map</a></li>
+      <li><button class="Account" id="createAccountBtn">Create Account</button></li>
+      <li><button class="Login" id="loginModalBtn">Login</button></li>
+    </ul>
+  </nav>
+  <div id="accountModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeAccountModal">&times;</span>
+      <h2>Create Account</h2>
+      <form id="accountForm">
+        <div class="field"><label>First Name*</label><input type="text" id="fname" required></div>
+        <div class="field"><label>Last Name</label><input type="text" id="lname"></div>
+        <div class="field"><label>Contact Number*</label><input type="tel" id="contact" maxlength="10" required></div>
+        <div class="field"><label>Email*</label><input type="email" id="email" required></div>
+        <div class="field"><label>Password*</label><input type="password" id="pass" minlength="8" maxlength="16" required></div>
+        <div class="field"><label>Confirm Password*</label><input type="password" id="cpass" required></div>
+        <div class="actions">
+          <button type="submit" id="submitBtn">Submit</button>
+          <button type="button" id="goLogin">Login</button>
+          <button type="button" id="backBtn">Back</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeLoginModal">&times;</span>
+      <h2>Login</h2>
+      <form id="loginForm">
+        <div class="field"><label>Email*</label><input type="email" id="loginEmail" required></div>
+        <div class="field"><label>Password*</label><input type="password" id="loginPassword" required></div>
+        <div class="actions">
+          <button type="submit">Login</button>
+          <button type="button" id="backLogin">Back</button>
+          <button type="button" id="forgotBtn">Forgot Password</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div id="forgotModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeForgotModal">&times;</span>
+      <h2>Forgot Password</h2>
+      <form id="forgotForm">
+        <div class="field">
+          <label>Enter your registered email</label>
+          <input type="email" id="forgotEmail" required>
+        </div>
+        <div class="actions">
+          <button type="submit">Send Reset Link</button>
+          <button type="button" id="backForgot">Back</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+    <section id="tourist" class="card">
+      <h2>Tourist Place</h2>
+      <div class="red-bar vertical"></div><br>
+      <div class="tourist-plase">
+        <span><a href="Rajsthan.html">Rajasthan</a></span><br>
+        <span><a href="Jyotirlingas.html">Jyotirlingas</a></span><br>
+        <span><a href="Punjab.html">Punjab</a></span><br>
+        <span><a href="Uttar_pradesh.html">Uttar - Pradesh</a></span><br>
+        <span><a href="Gujarat.html">Gujarat</a></span><br>
+        <span><a href="Madhya_Pradesh.html">Madhya - Pradesh</a></span><br>
+        <span><a href="Delhi.html">Delhi</a></span><br>
+      </div>
+    </section>
+    <section id="Madhya-Pradesh" class="card">
+       <h3>Top 7 Tourist Places in Madhya Pradesh</h3>
+       <div class="red-bar vertical"></div>
+        <div class="tourist-container">
+         <span><a href="#khajuraho_temples">1. Khajuraho Temples, Chhatarpur</a></span><br>
+         <span><a href="#kanha_national_park">2. Kanha National Park, Mandla</a></span><br>
+         <span><a href="#gwalior_fort">3. Gwalior Fort, Gwalior</a></span><br>
+         <span><a href="#ujjain_mahakaleshwar">4. Ujjain (Mahakaleshwar Temple)</a></span><br>
+         <span><a href="#sanchi_stupa">5. Sanchi Stupa, Raisen</a></span><br>
+         <span><a href="#pachmarhi_hill_station">6. Pachmarhi Hill Station</a></span><br>
+         <span><a href="#bandhavgarh_national_park">7. Bandhavgarh National Park, Umaria</a></span><br>
+        </div>
+    </section>
+
+       <section id="khajuraho_temples" class="card">
+     <h3>1. Khajuraho Temples – Chhatarpur</h3>
+     <div class="red-bar vertical"></div><br>
+     <h4>Details</h4>
+     <ol class="khajuraho_temples_chhatarpur">
+       <li><b>Built by:</b> Chandela Dynasty</li><br>
+       <li><b>Entry Fee:</b> ₹40 (Indians), ₹600 (Foreigners)</li><br>
+       <li><b>Opening Hours:</b> 6 AM – 6 PM</li><br>
+       <li><b>Tips:</b> Best visited in the early morning; photography allowed outside temples</li><br>
+       <li><b>Nearest Railway Station:</b> Khajuraho Railway Station</li><br>
+       <li><b>Nearest Airport:</b> Khajuraho Airport</li><br>
+       <li><b>Travel Time:</b> 10–15 minutes from Airport</li><br>
+     </ol>
+   </section>
+
+   <section id="kanha_national_park" class="card">
+     <h3>2. Kanha National Park – Mandla</h3>
+     <div class="red-bar vertical"></div><br>
+     <h4>Details</h4>
+     <ol class="kanha_national_park_mandla">
+       <li><b>Famous for:</b> Bengal Tigers and wildlife safari</li><br>
+       <li><b>Entry Fee:</b> ₹300 (Indians), ₹1500 (Foreigners) per safari</li><br>
+       <li><b>Opening Hours:</b> 6 AM – 6 PM; safari timings vary</li><br>
+       <li><b>Tips:</b> Book safari tickets in advance; carry binoculars and camera</li><br>
+       <li><b>Nearest Railway Station:</b> Jabalpur Railway Station</li><br>
+       <li><b>Nearest Airport:</b> Jabalpur Airport</li><br>
+       <li><b>Travel Time:</b> 3–4 hours from Jabalpur</li><br>
+     </ol>
+   </section>
+
+   <section id="gwalior_fort" class="card">
+     <h3>3. Gwalior Fort – Gwalior</h3>
+     <div class="red-bar vertical"></div><br>
+     <h4>Details</h4>
+     <ol class="gwalior_fort_gwalior">
+       <li><b>Built by:</b> Raja Man Singh Tomar</li><br>
+       <li><b>Entry Fee:</b> ₹25 (Indians), ₹200 (Foreigners)</li><br>
+       <li><b>Opening Hours:</b> 6 AM – 6 PM</li><br>
+       <li><b>Tips:</b> Hire a guide to explore the fort thoroughly; visit early morning</li><br>
+       <li><b>Nearest Railway Station:</b> Gwalior Junction</li><br>
+       <li><b>Nearest Airport:</b> Gwalior Airport</li><br>
+       <li><b>Travel Time:</b> 15–20 minutes from airport</li><br>
+     </ol>
+   </section>
+
+   <section id="ujjain_mahakaleshwar" class="card">
+     <h3>4. Ujjain – Mahakaleshwar Temple</h3>
+     <div class="red-bar vertical"></div><br>
+     <h4>Details</h4>
+     <ol class="ujjain_mahakaleshwar">
+       <li><b>Famous for:</b> One of the 12 Jyotirlingas of Lord Shiva</li><br>
+       <li><b>Entry Fee:</b> Free</li><br>
+       <li><b>Opening Hours:</b> 4 AM – 12 PM & 4 PM – 10 PM</li><br>
+       <li><b>Tips:</b> Attend early morning Bhasma Aarti for spiritual experience</li><br>
+       <li><b>Nearest Railway Station:</b> Ujjain Junction</li><br>
+       <li><b>Nearest Airport:</b> Devi Ahilya Bai Holkar Airport, Indore</li><br>
+       <li><b>Travel Time:</b> Approx. 1.5 hours from Indore Airport</li><br>
+     </ol>
+   </section>
+
+   <section id="sanchi_stupa" class="card">
+     <h3>5. Sanchi Stupa – Raisen</h3>
+     <div class="red-bar vertical"></div><br>
+     <h4>Details</h4>
+     <ol class="sanchi_stupa_raisen">
+       <li><b>Built by:</b> Emperor Ashoka (3rd century BCE)</li><br>
+       <li><b>Entry Fee:</b> ₹40 (Indians), ₹500 (Foreigners)</li><br>
+       <li><b>Opening Hours:</b> 6 AM – 6 PM</li><br>
+       <li><b>Tips:</b> Explore the museum nearby; best visited during cooler months</li><br>
+       <li><b>Nearest Railway Station:</b> Sanchi Railway Station / Bhopal Junction</li><br>
+       <li><b>Nearest Airport:</b> Raja Bhoj Airport, Bhopal</li><br>
+       <li><b>Travel Time:</b> Around 1–1.5 hours from Bhopal Airport</li><br>
+      </ol>
+   </section>
+
+   <section id="pachmarhi_hill_station" class="card">
+     <h3>6. Pachmarhi Hill Station</h3>
+     <div class="red-bar vertical"></div><br>
+     <h4>Details</h4>
+     <ol class="pachmarhi_hill_station">
+       <li><b>Famous for:</b> Hill station, waterfalls, caves, and wildlife</li><br>
+       <li><b>Entry Fee:</b> Free</li><br>
+       <li><b>Opening Hours:</b> Open all day</li><br>
+       <li><b>Tips:</b> Best visited in winter and monsoon; trekking and boating available</li><br>
+       <li><b>Nearest Railway Station:</b> Pipariya Railway Station</li><br>
+       <li><b>Nearest Airport:</b> Bhopal Airport</li><br>
+       <li><b>Travel Time:</b> Approx. 3–4 hours from Bhopal Airport</li><br>
+     </ol>
+   </section>
+
+   <section id="bandhavgarh_national_park" class="card">
+     <h3>7. Bandhavgarh National Park – Umaria</h3>
+     <div class="red-bar vertical"></div><br>
+     <h4>Details</h4>
+     <ol class="bandhavgarh_national_park">
+       <li><b>Famous for:</b> Bengal Tigers and wildlife safari</li><br>
+       <li><b>Entry Fee:</b> ₹350 (Indians), ₹1500 (Foreigners) per safari</li><br>
+       <li><b>Opening Hours:</b> 6 AM – 6 PM; safari timings vary</li><br>
+       <li><b>Tips:</b> Book safari tickets in advance; best visited in winter</li><br>
+       <li><b>Nearest Railway Station:</b> Umaria Railway Station</li><br>
+       <li><b>Nearest Airport:</b> Jabalpur Airport (approx. 160 km)</li><br>
+       <li><b>Travel Time:</b> 3–4 hours from Jabalpur Airport</li><br>
+     </ol>
+   </section>
+
+    <section id="contact" class="card">
+      <h3>Contact</h3>
+      <div class="red-bar vertical"></div><br>
+      <div class="social-links">
+        <a href=""><i class="fa-brands fa-instagram"></i></a>  <a href=""><i class="fa-solid fa-phone-volume"></i></a>  <a href=""><i class="fa-solid fa-envelope"></i></a>  <a href=""><i class="fa-solid fa-comments"></i></a>
+     </div>
+   </section>
+  </div>
+  <footer>
+   <p>© 2025 Apna Tourist | All Rights Reserved</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

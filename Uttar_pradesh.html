@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Uttar_pradesh | Apna Tourist</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Apna Tourist</div>
+     <div class="menu-toggle" id="menuToggle">☰</div>
+    <ul id="nav-links">
+      <li><a href="#Home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#tourist">Tourist Places</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#map">Map</a></li>
+      <li><button class="Account" id="createAccountBtn">Create Account</button></li>
+      <li><button class="Login" id="loginModalBtn">Login</button></li>
+    </ul>
+  </nav>
+  <div id="accountModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeAccountModal">&times;</span>
+      <h2>Create Account</h2>
+      <form id="accountForm">
+        <div class="field"><label>First Name*</label><input type="text" id="fname" required></div>
+        <div class="field"><label>Last Name</label><input type="text" id="lname"></div>
+        <div class="field"><label>Contact Number*</label><input type="tel" id="contact" maxlength="10" required></div>
+        <div class="field"><label>Email*</label><input type="email" id="email" required></div>
+        <div class="field"><label>Password*</label><input type="password" id="pass" minlength="8" maxlength="16" required></div>
+        <div class="field"><label>Confirm Password*</label><input type="password" id="cpass" required></div>
+        <div class="actions">
+          <button type="submit" id="submitBtn">Submit</button>
+          <button type="button" id="goLogin">Login</button>
+          <button type="button" id="backBtn">Back</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeLoginModal">&times;</span>
+      <h2>Login</h2>
+      <form id="loginForm">
+        <div class="field"><label>Email*</label><input type="email" id="loginEmail" required></div>
+        <div class="field"><label>Password*</label><input type="password" id="loginPassword" required></div>
+        <div class="actions">
+          <button type="submit">Login</button>
+          <button type="button" id="backLogin">Back</button>
+          <button type="button" id="forgotBtn">Forgot Password</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div id="forgotModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeForgotModal">&times;</span>
+      <h2>Forgot Password</h2>
+      <form id="forgotForm">
+        <div class="field">
+          <label>Enter your registered email</label>
+          <input type="email" id="forgotEmail" required>
+        </div>
+        <div class="actions">
+          <button type="submit">Send Reset Link</button>
+          <button type="button" id="backForgot">Back</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+    <section id="tourist" class="card">
+      <h2>Tourist Place</h2>
+      <div class="red-bar vertical"></div><br>
+      <div class="tourist-plase">
+        <span><a href="Rajsthan.html">Rajasthan</a></span><br>
+        <span><a href="Jyotirlingas.html">Jyotirlingas</a></span><br>
+        <span><a href="Punjab.html">Punjab</a></span><br>
+        <span><a href="Uttar_pradesh.html">Uttar - Pradesh</a></span><br>
+        <span><a href="Gujarat.html">Gujarat</a></span><br>
+        <span><a href="Madhya_Pradesh.html">Madhya - Pradesh</a></span><br>
+        <span><a href="Delhi.html">Delhi</a></span><br>
+      </div>
+    </section>
+    <section id="Uttar-pradesh" class="card">
+       <h3>Top 7 Tourist Places in Uttar Pradesh</h3>
+       <div class="red-bar vertical"></div>
+       <div class="tourist-container">
+         <span><a href="#taj_mahal">1. Taj Mahal, Agra</a></span><br>
+         <span><a href="#varanasi">2. Varanasi (Kashi)</a></span><br>
+         <span><a href="#agra_fort">3. Agra Fort, Agra</a></span><br>
+         <span><a href="#mathura_vrindavan">4. Mathura & Vrindavan</a></span><br>
+         <span><a href="#fatehpur_sikri">5. Fatehpur Sikri, Agra</a></span><br>
+         <span><a href="#ayodhya">6. Ayodhya</a></span><br>
+         <span><a href="#sarnath">7. Sarnath (Near Varanasi)</a></span><br>
+       </div>
+    </section>
+
+   <section id="taj_mahal" class="card">
+     <h3>1. Taj Mahal – Agra</h3>
+     <div class="red-bar vertical"></div><br>
+     <h4>Details</h4>
+     <ol class="taj_mahal_agra">
+       <li><b>Built by:</b> Emperor Shah Jahan</li><br>
+       <li><b>Entry Fee:</b> ₹50 (Indians), ₹1100 (Foreigners)</li><br>
+       <li><b>Opening Hours:</b> 6 AM – 6:30 PM, closed on Fridays</li><br>
+       <li><b>Tips:</b> Best visited during sunrise or sunset for the best view</li><br>
+       <li><b>Nearest Railway Station:</b> Agra Cantt</li><br>
+       <li><b>Nearest Airport:</b> Agra Airport</li><br>
+       <li><b>Travel Time:</b> Approx. 30 minutes from Airport</li><br>
+     </ol>
+   </section>
+
+   <section id="varanasi" class="card">
+     <h3>2. Varanasi (Kashi) – Varanasi</h3>
+     <div class="red-bar vertical"></div><br>
+     <h4>Details</h4>
+     <ol class="varanasi_kashi">
+       <li><b>Famous for:</b> Kashi Vishwanath Temple & Ganga Aarti</li><br>
+       <li><b>Entry Fee:</b> Free</li><br>
+       <li><b>Opening Hours:</b> 4 AM – 11 PM</li><br>
+       <li><b>Tips:</b> Attend the evening Ganga Aarti for a spiritual experience</li><br>
+       <li><b>Nearest Railway Station:</b> Varanasi Junction</li><br>
+       <li><b>Nearest Airport:</b> Lal Bahadur Shastri Airport</li><br>
+       <li><b>Travel Time:</b> Around 30 minutes from Airport</li><br>
+     </ol>
+   </section>
+
+   <section id="agra_fort" class="card">
+     <h3>3. Agra Fort – Agra</h3>
+     <div class="red-bar vertical"></div><br>
+     <h4>Details</h4>
+     <ol class="agra_fort_agra">
+       <li><b>Built by:</b> Emperor Akbar</li><br>
+       <li><b>Entry Fee:</b> ₹50 (Indians), ₹650 (Foreigners)</li><br>
+       <li><b>Opening Hours:</b> 6 AM – 6 PM</li><br>
+       <li><b>Tips:</b> Hire a local guide to understand the historical background</li><br>
+       <li><b>Nearest Railway Station:</b> Agra Fort Station</li><br>
+       <li><b>Nearest Airport:</b> Agra Airport</li><br>
+       <li><b>Travel Time:</b> 20–25 minutes from Airport</li><br>
+     </ol>
+   </section>
+
+   <section id="mathura_vrindavan" class="card">
+     <h3>4. Mathura & Vrindavan</h3>
+     <div class="red-bar vertical"></div><br>
+     <h4>Details</h4>
+     <ol class="mathura_vrindavan">
+       <li><b>Famous for:</b> Birthplace of Lord Krishna</li><br>
+       <li><b>Entry Fee:</b> Free</li><br>
+       <li><b>Opening Hours:</b> 5 AM – 10 PM</li><br>
+       <li><b>Tips:</b> Visit during Janmashtami or Holi for grand celebrations</li><br>
+       <li><b>Nearest Railway Station:</b> Mathura Junction</li><br>
+       <li><b>Nearest Airport:</b> Agra Airport</li><br>
+       <li><b>Travel Time:</b> Around 1 hour from Agra</li><br>
+     </ol>
+   </section>
+
+   <section id="fatehpur_sikri" class="card">
+     <h3>5. Fatehpur Sikri – Agra</h3>
+     <div class="red-bar vertical"></div><br>
+     <h4>Details</h4>
+     <ol class="fatehpur_sikri_agra">
+       <li><b>Built by:</b> Emperor Akbar</li><br>
+       <li><b>Entry Fee:</b> ₹35 (Indians), ₹550 (Foreigners)</li><br>
+       <li><b>Opening Hours:</b> 6 AM – 6 PM</li><br>
+       <li><b>Tips:</b> Carry drinking water; the area is quite large</li><br>
+       <li><b>Nearest Railway Station:</b> Fatehpur Sikri Station</li><br>
+       <li><b>Nearest Airport:</b> Agra Airport</li><br>
+       <li><b>Travel Time:</b> Around 45 minutes from Agra city</li><br>
+     </ol>
+   </section>
+
+   <section id="ayodhya" class="card">
+     <h3>6. Ayodhya</h3>
+     <div class="red-bar vertical"></div><br>
+     <h4>Details</h4>
+     <ol class="ayodhya">
+       <li><b>Famous for:</b> Ram Janmabhoomi Temple</li><br>
+       <li><b>Entry Fee:</b> Free</li><br>
+       <li><b>Opening Hours:</b> 6 AM – 9 PM</li><br>
+       <li><b>Tips:</b> Visit during Ram Navami for special rituals and decorations</li><br>
+       <li><b>Nearest Railway Station:</b> Ayodhya Dham Junction</li><br>
+       <li><b>Nearest Airport:</b> Maharishi Valmiki International Airport, Ayodhya</li><br>
+       <li><b>Travel Time:</b> 20–25 minutes from Airport</li><br>
+     </ol>
+   </section>
+
+   <section id="sarnath" class="card">
+     <h3>7. Sarnath – Near Varanasi</h3>
+     <div class="red-bar vertical"></div><br>
+     <h4>Details</h4>
+     <ol class="sarnath_varanasi">
+       <li><b>Famous for:</b> The place where Lord Buddha delivered his first sermon</li><br>
+       <li><b>Entry Fee:</b> ₹20 (Indians), ₹200 (Foreigners)</li><br>
+       <li><b>Opening Hours:</b> 6 AM – 6 PM</li><br>
+       <li><b>Tips:</b> Don’t miss the Archaeological Museum nearby</li><br>
+       <li><b>Nearest Railway Station:</b> Varanasi Junction</li><br>
+       <li><b>Nearest Airport:</b> Lal Bahadur Shastri Airport</li><br>
+       <li><b>Travel Time:</b> Around 30 minutes from Varanasi city</li><br>
+     </ol>
+   </section>
+
+    <section id="contact" class="card">
+      <h3>Contact</h3>
+      <div class="red-bar vertical"></div><br>
+      <div class="social-links">
+        <a href=""><i class="fa-brands fa-instagram"></i></a>  <a href=""><i class="fa-solid fa-phone-volume"></i></a>  <a href=""><i class="fa-solid fa-envelope"></i></a>  <a href=""><i class="fa-solid fa-comments"></i></a>
+     </div>
+   </section>
+  </div>
+  <footer>
+   <p>© 2025 Apna Tourist | All Rights Reserved</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

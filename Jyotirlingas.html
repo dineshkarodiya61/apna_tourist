@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jyotirlingas | Tourist</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Apna Tourist</div>
+     <div class="menu-toggle" id="menuToggle">☰</div>
+    <ul id="nav-links">
+      <li><a href="#Home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#tourist">Tourist Places</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#map">Map</a></li>
+      <li><button class="Account" id="createAccountBtn">Create Account</button></li>
+      <li><button class="Login" id="loginModalBtn">Login</button></li>
+    </ul>
+  </nav>
+  <div id="accountModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeAccountModal">&times;</span>
+      <h2>Create Account</h2>
+      <form id="accountForm">
+        <div class="field"><label>First Name*</label><input type="text" id="fname" required></div>
+        <div class="field"><label>Last Name</label><input type="text" id="lname"></div>
+        <div class="field"><label>Contact Number*</label><input type="tel" id="contact" maxlength="10" required></div>
+        <div class="field"><label>Email*</label><input type="email" id="email" required></div>
+        <div class="field"><label>Password*</label><input type="password" id="pass" minlength="8" maxlength="16" required></div>
+        <div class="field"><label>Confirm Password*</label><input type="password" id="cpass" required></div>
+        <div class="actions">
+          <button type="submit" id="submitBtn">Submit</button>
+          <button type="button" id="goLogin">Login</button>
+          <button type="button" id="backBtn">Back</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeLoginModal">&times;</span>
+      <h2>Login</h2>
+      <form id="loginForm">
+        <div class="field"><label>Email*</label><input type="email" id="loginEmail" required></div>
+        <div class="field"><label>Password*</label><input type="password" id="loginPassword" required></div>
+        <div class="actions">
+          <button type="submit">Login</button>
+          <button type="button" id="backLogin">Back</button>
+          <button type="button" id="forgotBtn">Forgot Password</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div id="forgotModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeForgotModal">&times;</span>
+      <h2>Forgot Password</h2>
+      <form id="forgotForm">
+        <div class="field">
+          <label>Enter your registered email</label>
+          <input type="email" id="forgotEmail" required>
+        </div>
+        <div class="actions">
+          <button type="submit">Send Reset Link</button>
+          <button type="button" id="backForgot">Back</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+    <section id="tourist" class="card">
+      <h2>Tourist Place</h2>
+      <div class="red-bar vertical"></div><br>
+      <div class="tourist-plase">
+        <span><a href="Rajsthan.html">Rajasthan</a></span><br>
+        <span><a href="Jyotirlingas.html">Jyotirlingas</a></span><br>
+        <span><a href="Punjab.html">Punjab</a></span><br>
+        <span><a href="Uttar_pradesh.html">Uttar - Pradesh</a></span><br>
+        <span><a href="Gujarat.html">Gujarat</a></span><br>
+        <span><a href="Madhya_Pradesh.html">Madhya - Pradesh</a></span><br>
+        <span><a href="Delhi.html">Delhi</a></span><br>
+      </div>
+    </section>
+    <section id="Jyotirlingas" class="card">
+      <h3>12 Jyotirlingas in India</h3>
+      <div class="red-bar vertical"></div>
+      <div class="tourist-container">
+        <span><a href="#somnath">1. Somnath – Veraval, Gujarat</a></span><br>
+        <span><a href="#mallikarjuna">2. Mallikarjuna – Srisailam, Andhra Pradesh</a></span><br>
+        <span><a href="#mahakaleshwar">3. Mahakaleshwar – Ujjain, Madhya Pradesh</a></span><br>
+        <span><a href="#omkareshwar">4. Omkareshwar – Khandwa, Madhya Pradesh</a></span><br>
+        <span><a href="#kedarnath">5. Kedarnath – Kedarnath, Uttarakhand</a></span><br>
+        <span><a href="#bhimashankar">6. Bhimashankar – Pune, Maharashtra</a></span><br>
+        <span><a href="#kashi_vishwanath">7. Kashi Vishwanath – Varanasi, Uttar Pradesh</a></span><br>
+        <span><a href="#trimbakeshwar">8. Trimbakeshwar – Nashik, Maharashtra</a></span><br>
+        <span><a href="#vaidyanath">9. Vaidyanath – Deoghar, Jharkhand / Parli, Maharashtra</a></span><br>
+        <span><a href="#nageshwar">10. Nageshwar – Dwarka, Gujarat</a></span><br>
+        <span><a href="#ramanathaswamy">11. Ramanathaswamy – Rameswaram, Tamil Nadu</a></span><br>
+        <span><a href="#grishneshwar">12. Grishneshwar – Ellora, Maharashtra</a></span><br>
+      </div>
+    </section>
+        <section id="somnath" class="card">
+     <h3>1. Somnath – Veraval, Gujarat</h3>
+     <div class="red-bar vertical"></div><br>
+     <h4>Details</h4>
+     <ol class="Somnath_Veraval">
+       <li><b>Nearest Railway Station – </b>Veraval Railway Station</li><br>
+       <li><b>Nearest Airport – </b>Diu Airport (95 km)</li><br>
+       <li><b>Travel Time – </b>2–3 hours by car (₹1500–₹2000)</li><br>
+       <li><b>Opening Hours – </b>6 AM to 9 PM</li><br>
+       <li><b>Tips – </b>Visit during evening Aarti for best view</li><br>
+     </ol>
+   </section>
+
+   <section id="mallikarjuna" class="card">
+     <h3>2. Mallikarjuna – Srisailam, Andhra Pradesh</h3>
+     <div class="red-bar vertical"></div><br>
+     <h4>Details</h4>
+     <ol class="Mallikarjuna_Srisailam">
+       <li><b>Nearest Railway Station – </b>Markapur Road</li><br>
+       <li><b>Nearest Airport – </b>Hyderabad (213 km)</li><br>
+       <li><b>Travel Time – </b>5–6 hours by road (₹1500–₹2000)</li><br>
+       <li><b>Opening Hours – </b>6 AM–12 PM, 3 PM–8 PM</li><br>
+       <li><b>Tips – </b>Use the ropeway for easy temple access</li><br>
+     </ol>
+   </section>
+
+   <section id="mahakaleshwar" class="card">
+     <h3>3. Mahakaleshwar – Ujjain, Madhya Pradesh</h3>
+     <div class="red-bar vertical"></div><br>
+     <h4>Details</h4>
+     <ol class="Mahakaleshwar_Ujjain">
+       <li><b>Nearest Railway Station – </b>Ujjain Junction</li><br>
+       <li><b>Nearest Airport – </b>Indore (57 km)</li><br>
+       <li><b>Travel Time – </b>1–1.5 hours (₹500–₹700)</li><br>
+       <li><b>Opening Hours – </b>4 AM to 11 PM</li><br>
+       <li><b>Tips – </b>Don’t miss the Bhasma Aarti in the morning</li><br>
+     </ol>
+   </section>
+
+   <section id="omkareshwar" class="card">
+     <h3>4. Omkareshwar – Khandwa, Madhya Pradesh</h3>
+     <div class="red-bar vertical"></div><br>
+     <h4>Details</h4>
+     <ol class="Omkareshwar_Khandwa">
+       <li><b>Nearest Railway Station – </b>Omkareshwar Road</li><br>
+       <li><b>Nearest Airport – </b>Indore (77 km)</li><br>
+       <li><b>Travel Time – </b>1.5–2 hours (₹700–₹1000)</li><br>
+       <li><b>Opening Hours – </b>5 AM to 10 PM</li><br>
+       <li><b>Tips – </b>Take a boat ride to Mandhata Island</li><br>
+     </ol>
+   </section>
+
+   <section id="kedarnath" class="card">
+     <h3>5. Kedarnath – Uttarakhand</h3>
+     <div class="red-bar vertical"></div><br>
+     <h4>Details</h4>
+     <ol class="Kedarnath_Uttarakhand">
+       <li><b>Nearest Railway Station – </b>Rishikesh</li><br>
+       <li><b>Nearest Airport – </b>Dehradun (239 km)</li><br>
+       <li><b>Travel Mode – </b>Trekking or helicopter (₹5000–₹6000)</li><br>
+       <li><b>Opening Months – </b>May to November</li><br>
+       <li><b>Tips – </b>Carry warm clothes; check weather updates</li><br>
+     </ol>
+   </section>
+
+   <section id="bhimashankar" class="card">
+     <h3>6. Bhimashankar – Pune, Maharashtra</h3>
+     <div class="red-bar vertical"></div><br>
+     <h4>Details</h4>
+     <ol class="Bhimashankar_Pune">
+       <li><b>Nearest Railway Station – </b>Pune Junction</li><br>
+       <li><b>Nearest Airport – </b>Pune Airport (110 km)</li><br>
+       <li><b>Travel Time – </b>3–4 hours (₹1500–₹2000)</li><br>
+       <li><b>Opening Hours – </b>6 AM to 8 PM</li><br>
+       <li><b>Tips – </b>Located amidst dense forests; great for nature lovers</li><br>
+     </ol>
+   </section>
+
+   <section id="kashi_vishwanath" class="card">
+      <h3>7. Kashi Vishwanath – Varanasi, Uttar Pradesh</h3>
+      <div class="red-bar vertical"></div><br>
+      <h4>Details</h4>
+      <ol class="Kashi_Vishwanath_Varanasi">
+        <li><b>Nearest Railway Station – </b>Varanasi Junction</li><br>
+        <li><b>Nearest Airport – </b>Lal Bahadur Shastri Airport (22 km)</li><br>
+        <li><b>Travel Time – </b>30–45 mins (₹200–₹300)</li><br>
+        <li><b>Opening Hours – </b>4 AM to 11 PM</li><br>
+        <li><b>Tips – </b>Morning Ganga Aarti is must-watch</li><br>
+      </ol>
+    </section>
+
+    <section id="trimbakeshwar" class="card">
+      <h3>8. Trimbakeshwar – Nashik, Maharashtra</h3>
+      <div class="red-bar vertical"></div><br>
+      <h4>Details</h4>
+      <ol class="Trimbakeshwar_Nashik">
+        <li><b>Nearest Railway Station – </b>Nashik Road</li><br>
+        <li><b>Nearest Airport – </b>Nashik Airport (28 km)</li><br>
+        <li><b>Travel Time – </b>1 hour (₹300–₹500)</li><br>
+        <li><b>Opening Hours – </b>5 AM to 10 PM</li><br>
+        <li><b>Tips – </b>Known for unique three-faced Shiva Lingam</li><br>
+      </ol>
+    </section>
+
+   <section id="vaidyanath" class="card">
+      <h3>9. Vaidyanath – Deoghar, Jharkhand</h3>
+      <div class="red-bar vertical"></div><br>
+      <h4>Details</h4>
+     <ol class="Vaidyanath_Deoghar">
+        <li><b>Nearest Railway Station – </b>Jasidih Junction</li><br>
+       <li><b>Nearest Airport – </b>Deoghar Airport (14 km)</li><br>
+       <li><b>Travel Time – </b>30–40 mins (₹200–₹300)</li><br>
+       <li><b>Opening Hours – </b>5 AM to 10 PM</li><br>
+       <li><b>Tips – </b>Very crowded in Sawan month</li><br>
+     </ol>
+   </section>
+
+   <section id="nageshwar" class="card">
+      <h3>10. Nageshwar – Dwarka, Gujarat</h3>
+      <div class="red-bar vertical"></div><br>
+      <h4>Details</h4>
+     <ol class="Nageshwar_Dwarka">
+        <li><b>Nearest Railway Station – </b>Dwarka Railway Station</li><br>
+        <li><b>Nearest Airport – </b>Jamnagar Airport (128 km)</li><br>
+        <li><b>Travel Time – </b>2–3 hours (₹1500–₹2000)</li><br>
+        <li><b>Opening Hours – </b>5 AM to 10 PM</li><br>
+        <li><b>Tips – </b>Located near Dwarka beach temples</li><br>
+     </ol>
+   </section>
+
+   <section id="ramanathaswamy" class="card">
+      <h3>11. Ramanathaswamy – Rameswaram, Tamil Nadu</h3>
+      <div class="red-bar vertical"></div><br>
+      <h4>Details</h4>
+      <ol class="Ramanathaswamy_Rameswaram">
+       <li><b>Nearest Railway Station – </b>Rameswaram Station</li><br>
+       <li><b>Nearest Airport – </b>Madurai Airport (170 km)</li><br>
+       <li><b>Travel Time – </b>3–4 hours (₹1000–₹1500)</li><br>
+       <li><b>Opening Hours – </b>5 AM–1 PM, 3 PM–9 PM</li><br>
+       <li><b>Tips – </b>Famous for 22 holy water tanks</li><br>
+     </ol>
+   </section>
+
+    <section id="grishneshwar" class="card">
+      <h3>12. Grishneshwar – Ellora, Maharashtra</h3>
+      <div class="red-bar vertical"></div><br>
+      <h4>Details</h4>
+     <ol class="Grishneshwar_Ellora">
+        <li><b>Nearest Railway Station – </b>Aurangabad</li><br>
+        <li><b>Nearest Airport – </b>Aurangabad Airport (30 km)</li><br>
+        <li><b>Travel Time – </b>45 mins–1 hour (₹300–₹500)</li><br>
+        <li><b>Opening Hours – </b>6 AM to 9 PM</li><br>
+        <li><b>Tips – </b>Located near Ellora Caves, beautiful architecture</li><br>
+     </ol>
+    </section>
+
+    <section id="contact" class="card">
+      <h3>Contact</h3>
+      <div class="red-bar vertical"></div><br>
+      <div class="social-links">
+        <a href=""><i class="fa-brands fa-instagram"></i></a>  <a href=""><i class="fa-solid fa-phone-volume"></i></a>  <a href=""><i class="fa-solid fa-envelope"></i></a>  <a href=""><i class="fa-solid fa-comments"></i></a>
+     </div>
+   </section>
+  </div>
+  <footer>
+   <p>© 2025 Apna Tourist | All Rights Reserved</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

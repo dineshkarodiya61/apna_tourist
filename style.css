@@ -177,10 +177,6 @@ input {
   margin-bottom: 1rem;
   color: #111;
 }
-button:click{
-  background-color: #333;
-}
-
 .card h3 {
   font-size: 1.8rem;
   margin-bottom: 1rem;

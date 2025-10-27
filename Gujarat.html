@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gujarat | Apna Tourist</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Apna Tourist</div>
+     <div class="menu-toggle" id="menuToggle">☰</div>
+    <ul id="nav-links">
+      <li><a href="#Home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#tourist">Tourist Places</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#map">Map</a></li>
+      <li><button class="Account" id="createAccountBtn">Create Account</button></li>
+      <li><button class="Login" id="loginModalBtn">Login</button></li>
+    </ul>
+  </nav>
+  <div id="accountModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeAccountModal">&times;</span>
+      <h2>Create Account</h2>
+      <form id="accountForm">
+        <div class="field"><label>First Name*</label><input type="text" id="fname" required></div>
+        <div class="field"><label>Last Name</label><input type="text" id="lname"></div>
+        <div class="field"><label>Contact Number*</label><input type="tel" id="contact" maxlength="10" required></div>
+        <div class="field"><label>Email*</label><input type="email" id="email" required></div>
+        <div class="field"><label>Password*</label><input type="password" id="pass" minlength="8" maxlength="16" required></div>
+        <div class="field"><label>Confirm Password*</label><input type="password" id="cpass" required></div>
+        <div class="actions">
+          <button type="submit" id="submitBtn">Submit</button>
+          <button type="button" id="goLogin">Login</button>
+          <button type="button" id="backBtn">Back</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeLoginModal">&times;</span>
+      <h2>Login</h2>
+      <form id="loginForm">
+        <div class="field"><label>Email*</label><input type="email" id="loginEmail" required></div>
+        <div class="field"><label>Password*</label><input type="password" id="loginPassword" required></div>
+        <div class="actions">
+          <button type="submit">Login</button>
+          <button type="button" id="backLogin">Back</button>
+          <button type="button" id="forgotBtn">Forgot Password</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div id="forgotModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeForgotModal">&times;</span>
+      <h2>Forgot Password</h2>
+      <form id="forgotForm">
+        <div class="field">
+          <label>Enter your registered email</label>
+          <input type="email" id="forgotEmail" required>
+        </div>
+        <div class="actions">
+          <button type="submit">Send Reset Link</button>
+          <button type="button" id="backForgot">Back</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+    <section id="tourist" class="card">
+      <h2>Tourist Place</h2>
+      <div class="red-bar vertical"></div><br>
+      <div class="tourist-plase">
+        <span><a href="Rajsthan.html">Rajasthan</a></span><br>
+        <span><a href="Jyotirlingas.html">Jyotirlingas</a></span><br>
+        <span><a href="Punjab.html">Punjab</a></span><br>
+        <span><a href="Uttar_pradesh.html">Uttar - Pradesh</a></span><br>
+        <span><a href="Gujarat.html">Gujarat</a></span><br>
+        <span><a href="Madhya_Pradesh.html">Madhya - Pradesh</a></span><br>
+        <span><a href="Delhi.html">Delhi</a></span><br>
+      </div>
+    </section>
+    <section id="Gujarat" class="card">
+       <h3>Top 7 Tourist Places in Gujarat</h3>
+       <div class="red-bar vertical"></div>
+        <div class="tourist-container">
+          <span><a href="#somnath_temple">1. Somnath Temple, Veraval</a></span><br>
+          <span><a href="#rann_of_kutch">2. Rann of Kutch, Bhuj</a></span><br>
+          <span><a href="#gir_national_park">3. Gir National Park, Junagadh</a></span><br>
+          <span><a href="#dwarkadhish_temple">4. Dwarkadhish Temple, Dwarka</a></span><br>
+          <span><a href="#sabarmati_ashram">5. Sabarmati Ashram, Ahmedabad</a></span><br>
+          <span><a href="#statue_of_unity">6. Statue of Unity, Kevadia</a></span><br>
+          <span><a href="#saputara_hill_station">7. Saputara Hill Station, Dang</a></span><br>
+        </div>
+   </section>
+
+   <section id="somnath_temple" class="card">
+     <h3>1. Somnath Temple – Veraval</h3>
+     <div class="red-bar vertical"></div><br>
+     <h4>Details</h4>
+     <ol class="somnath_veraval">
+       <li><b>Built by:</b> Chalukya Kings / Reconstruction by Sardar Vallabhbhai Patel</li><br>
+       <li><b>Entry Fee:</b> Free</li><br>
+       <li><b>Opening Hours:</b> 5 AM – 10 PM</li><br>
+       <li><b>Tips:</b> Visit during evening Aarti for a spiritual experience</li><br>
+       <li><b>Nearest Railway Station:</b> Veraval Junction</li><br>
+       <li><b>Nearest Airport:</b> Diu Airport (approx. 100 km)</li><br>
+       <li><b>Travel Time:</b> 2–3 hours from nearest airport</li><br>
+     </ol>
+   </section>
+
+   <section id="rann_of_kutch" class="card">
+     <h3>2. Rann of Kutch – Bhuj</h3>
+     <div class="red-bar vertical"></div><br>
+     <h4>Details</h4>
+     <ol class="rann_of_kutch_bhuj">
+       <li><b>Famous for:</b> White Salt Desert and Rann Utsav Festival</li><br>
+       <li><b>Entry Fee:</b> Free (Festival entry may vary)</li><br>
+       <li><b>Opening Hours:</b> Sunrise to Sunset; best visited November – February</li><br>
+       <li><b>Tips:</b> Carry warm clothes at night; plan accommodation in advance during Rann Utsav</li><br>
+       <li><b>Nearest Railway Station:</b> Bhuj Railway Station</li><br>
+       <li><b>Nearest Airport:</b> Bhuj Airport</li><br>
+       <li><b>Travel Time:</b> Around 30–40 min from Bhuj city</li><br>
+     </ol>
+   </section>
+
+   <section id="gir_national_park" class="card">
+     <h3>3. Gir National Park – Junagadh</h3>
+     <div class="red-bar vertical"></div><br>
+     <h4>Details</h4>
+     <ol class="gir_national_park_junagadh">
+       <li><b>Famous for:</b> Asiatic Lions</li><br>
+       <li><b>Entry Fee:</b> ₹250 (Indians), ₹500 (Foreigners)</li><br>
+       <li><b>Opening Hours:</b> 6 AM – 5 PM (Safari timings may vary)</li><br>
+       <li><b>Tips:</b> Book safari tickets in advance; carry binoculars</li><br>
+       <li><b>Nearest Railway Station:</b> Junagadh Railway Station</li><br>
+       <li><b>Nearest Airport:</b> Rajkot Airport (approx. 120 km)</li><br>
+       <li><b>Travel Time:</b> 2–3 hours from Rajkot Airport</li><br>
+     </ol>
+   </section>
+
+   <section id="dwarkadhish_temple" class="card">
+     <h3>4. Dwarkadhish Temple – Dwarka</h3>
+     <div class="red-bar vertical"></div><br>
+     <h4>Details</h4>
+     <ol class="dwarkadhish_temple_dwarka">
+       <li><b>Built by:</b> Yadava Dynasty (Renovated several times)</li><br>
+       <li><b>Entry Fee:</b> Free</li><br>
+       <li><b>Opening Hours:</b> 4 AM – 10 PM</li><br>
+       <li><b>Tips:</b> Attend evening Aarti for best experience; follow dress code for temple</li><br>
+       <li><b>Nearest Railway Station:</b> Dwarka Railway Station</li><br>
+       <li><b>Nearest Airport:</b> Porbandar Airport (approx. 130 km)</li><br>
+       <li><b>Travel Time:</b> Around 2–3 hours from Porbandar Airport</li><br>
+     </ol>
+   </section>
+
+   <section id="sabarmati_ashram" class="card">
+     <h3>5. Sabarmati Ashram – Ahmedabad</h3>
+     <div class="red-bar vertical"></div><br>
+     <h4>Details</h4>
+     <ol class="sabarmati_ashram_ahmedabad">
+       <li><b>Famous for:</b> Residence of Mahatma Gandhi</li><br>
+       <li><b>Entry Fee:</b> Free</li><br>
+       <li><b>Opening Hours:</b> 8:30 AM – 7 PM</li><br>
+       <li><b>Tips:</b> Visit museum and Gandhi memorial; photography allowed outside</li><br>
+       <li><b>Nearest Railway Station:</b> Ahmedabad Junction</li><br>
+       <li><b>Nearest Airport:</b> Sardar Vallabhbhai Patel International Airport</li><br>
+       <li><b>Travel Time:</b> 15–20 min from airport</li><br>
+     </ol>
+   </section>
+
+   <section id="statue_of_unity" class="card">
+     <h3>6. Statue of Unity – Kevadia</h3>
+     <div class="red-bar vertical"></div><br>
+     <h4>Details</h4>
+     <ol class="statue_of_unity_kevadiya">
+       <li><b>Built in honor of:</b> Sardar Vallabhbhai Patel</li><br>
+       <li><b>Entry Fee:</b> ₹120–₹350 depending on viewing gallery (Indians), ₹400–₹600 (Foreigners)</li><br>
+       <li><b>Opening Hours:</b> 8 AM – 6 PM</li><br>
+       <li><b>Tips:</b> Visit early morning for lesser crowd; book tickets online</li><br>
+       <li><b>Nearest Railway Station:</b> Vadodara Junction (approx. 90 km)</li><br>
+       <li><b>Nearest Airport:</b> Vadodara Airport</li><br>
+       <li><b>Travel Time:</b> 2–3 hours from Vadodara</li><br>
+     </ol>
+   </section>
+
+   <section id="saputara_hill_station" class="card">
+     <h3>7. Saputara Hill Station – Dang</h3>
+     <div class="red-bar vertical"></div><br>
+     <h4>Details</h4>
+     <ol class="saputara_hill_station_dang">
+       <li><b>Famous for:</b> Hill station, lakes, and tribal culture</li><br>
+       <li><b>Entry Fee:</b> Free</li><br>
+       <li><b>Opening Hours:</b> Open all day</li><br>
+       <li><b>Tips:</b> Best visited during monsoon or winter; boating available in the lake</li><br>
+       <li><b>Nearest Railway Station:</b> Waghai Railway Station (approx. 50 km)</li><br>
+       <li><b>Nearest Airport:</b> Surat Airport (approx. 180 km)</li><br>
+       <li><b>Travel Time:</b> 4–5 hours from Surat Airport</li><br>
+     </ol>
+   </section>
+
+    <section id="contact" class="card">
+      <h3>Contact</h3>
+      <div class="red-bar vertical"></div><br>
+      <div class="social-links">
+        <a href=""><i class="fa-brands fa-instagram"></i></a>  <a href=""><i class="fa-solid fa-phone-volume"></i></a>  <a href=""><i class="fa-solid fa-envelope"></i></a>  <a href=""><i class="fa-solid fa-comments"></i></a>
+     </div>
+   </section>
+  </div>
+  <footer>
+   <p>© 2025 Apna Tourist | All Rights Reserved</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
