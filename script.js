@@ -1,54 +1,66 @@
-document.querySelector('.card#about').addEventListener('mouseenter', () => {
-document.querySelector('.card#about').scrollIntoView({ behavior: 'smooth', block: 'start' });
-});
+const accountModal = document.getElementById('accountModal');
+const loginModal = document.getElementById('loginModal');
+const forgotModal = document.getElementById('forgotModal');
 
-const accountModal = document.getElementById("accountModal");
-const loginModal = document.getElementById("loginModal");
-const forgotModal = document.getElementById("forgotModal");
+const createAccountBtn = document.getElementById('createAccountBtn');
+const loginModalBtn = document.getElementById('loginModalBtn');
+const goLoginBtn = document.getElementById('goLogin');
+const backBtn = document.getElementById('backBtn');
+const backLoginBtn = document.getElementById('backLogin');
+const forgotBtn = document.getElementById('forgotBtn');
+const backForgotBtn = document.getElementById('backForgot');
 
-const createAccountBtn = document.getElementById("createAccountBtn");
-const loginModalBtn = document.getElementById("loginModalBtn");
+const closeAccountModal = document.getElementById('closeAccountModal');
+const closeLoginModal = document.getElementById('closeLoginModal');
+const closeForgotModal = document.getElementById('closeForgotModal');
 
-const closeAccountModal = document.getElementById("closeAccountModal");
-const closeLoginModal = document.getElementById("closeLoginModal");
-const closeForgotModal = document.getElementById("closeForgotModal");
+createAccountBtn.onclick = () => {
+  accountModal.style.display = 'flex';
+};
 
-const backBtn = document.getElementById("backBtn");
-const goLogin = document.getElementById("goLogin");
-const backLogin = document.getElementById("backLogin");
-const forgotBtn = document.getElementById("forgotBtn");
-const backForgot = document.getElementById("backForgot");
 
-createAccountBtn.onclick = () => accountModal.style.display = "block";
-loginModalBtn.onclick = () => loginModal.style.display = "block";
+loginModalBtn.onclick = () => {
+  loginModal.style.display = 'flex';
+};
 
-closeAccountModal.onclick = () => accountModal.style.display = "none";
-closeLoginModal.onclick = () => loginModal.style.display = "none";
-closeForgotModal.onclick = () => forgotModal.style.display = "none";
 
-backBtn.onclick = () => accountModal.style.display = "none";
-backLogin.onclick = () => loginModal.style.display = "none";
-backForgot.onclick = () => forgotModal.style.display = "none";
+goLoginBtn.onclick = () => {
+  accountModal.style.display = 'none';
+  loginModal.style.display = 'flex';
+};
 
-goLogin.onclick = () => {
-  accountModal.style.display = "none";
-  loginModal.style.display = "block";
+
+backBtn.onclick = () => {
+  accountModal.style.display = 'none';
+};
+
+backLoginBtn.onclick = () => {
+  loginModal.style.display = 'none';
 };
 
 forgotBtn.onclick = () => {
-  loginModal.style.display = "none";
-  forgotModal.style.display = "block";
+  loginModal.style.display = 'none';
+  forgotModal.style.display = 'flex';
 };
 
-window.onclick = (event) => {
-  if (event.target == accountModal) accountModal.style.display = "none";
-  if (event.target == loginModal) loginModal.style.display = "none";
-  if (event.target == forgotModal) forgotModal.style.display = "none";
+backForgotBtn.onclick = () => {
+  forgotModal.style.display = 'none';
+  loginModal.style.display = 'flex';
 };
 
-const menuToggle = document.getElementById("menuToggle");
-const navLinks = document.getElementById("nav-links");
+closeAccountModal.onclick = () => (accountModal.style.display = 'none');
+closeLoginModal.onclick = () => (loginModal.style.display = 'none');
+closeForgotModal.onclick = () => (forgotModal.style.display = 'none');
 
-menuToggle.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
-});
+window.onclick = (e) => {
+  if (e.target === accountModal) accountModal.style.display = 'none';
+  if (e.target === loginModal) loginModal.style.display = 'none';
+  if (e.target === forgotModal) forgotModal.style.display = 'none';
+};
+
+const menuToggle = document.getElementById('menuToggle');
+const navLinks = document.getElementById('nav-links');
+
+menuToggle.onclick = () => {
+  navLinks.classList.toggle('active');
+};

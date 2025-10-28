@@ -171,6 +171,7 @@ input {
   position: relative;
   overflow: hidden;
   margin-top: 5px;
+  margin: 60 100 60 100 ;
 }
 .card h2 {
   font-size: 2.8rem;
