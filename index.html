@@ -24,7 +24,7 @@
   <div id="accountModal" class="modal">
     <div class="modal-content">
       <span class="close" id="closeAccountModal">&times;</span>
-      <h2>Create Account</h2>
+      <h2>Create Account</h2><br>
       <form id="accountForm">
         <div class="field"><label>First Name*</label><input type="text" id="fname" required></div>
         <div class="field"><label>Last Name</label><input type="text" id="lname"></div>
@@ -47,7 +47,7 @@
       <h2>Login</h2>
       <form id="loginForm">
         <div class="field"><label>Email*</label><input type="email" id="loginEmail" required></div>
-        <div class="field"><label>Password*</label><input type="password" id="loginPassword" required></div>
+        <div class="field"><label>Password*</label><input type="password" id="loginPassword" minlength="8" max="18" required></div>
         <div class="actions">
           <button type="submit">Login</button>
           <button type="button" id="backLogin">Back</button>
@@ -59,7 +59,7 @@
   <div id="forgotModal" class="modal">
     <div class="modal-content">
       <span class="close" id="closeForgotModal">&times;</span>
-      <h2>Forgot Password</h2>
+      <h2>Forgot Password</h2><br>
       <form id="forgotForm">
         <div class="field">
           <label>Enter your registered email</label>
@@ -78,12 +78,14 @@
         <h2>About</h2>
         <div class="red-bar vertical"></div><br>
         <h3>“Travel made hassle-free with Apna Tourist!”</h3><br>
-        <p>At some point during your journey, you may face problems — the food isn’t right, the room isn’t as expected, or the facilities are incomplete.
-          With Apna Tourist, forget all these troubles and fully enjoy your travel experience.
-        </p><br>
-        <p>We provide services tailored to your needs and make every decision easy. Always by your side, our goal is to make your travel plans safe, convenient, and memorable.
-         Apna Tourist — Your journey, our responsibility.
-        </p>
+        <div class="card">
+          <p>At some point during your journey, you may face problems — the food isn’t right, the room isn’t as expected, or the facilities are incomplete.
+           With Apna Tourist, forget all these troubles and fully enjoy your travel experience.
+          </p><br>
+          <p>We provide services tailored to your needs and make every decision easy. Always by your side, our goal is to make your travel plans safe, convenient, and memorable.
+           Apna Tourist — Your journey, our responsibility.
+          </p>
+        </div>
     </section>
 
     <section id="tourist" class="card">
@@ -104,7 +106,7 @@
       <h3>Contact</h3>
       <div class="red-bar vertical"></div><br>
       <div class="social-links">
-        <a href=""><i class="fa-brands fa-instagram"></i></a>  <a href=""><i class="fa-solid fa-phone-volume"></i></a>  <a href=""><i class="fa-solid fa-envelope"></i></a>  <a href=""><i class="fa-solid fa-comments"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>    <a href=""><i class="fa-solid fa-phone-volume"></i></a>    <a href=""><i class="fa-solid fa-envelope"></i></a>    <a href=""><i class="fa-solid fa-comments"></i></a>
      </div>
    </section>
   </div>
