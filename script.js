@@ -50,6 +50,7 @@ window.onclick = (e) => {
 
 const menuToggle = document.getElementById('menuToggle');
 const navLinks = document.getElementById('nav-links');
-menuToggle.onclick = () => {
-  navLinks.classList.toggle('active');
-};
+menuToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
+
