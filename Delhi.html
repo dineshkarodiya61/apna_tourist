@@ -22,6 +22,12 @@
       <li><button class="Account" id="createAccountBtn">Create Account</button></li>
       <li><button class="Login" id="loginModalBtn">Login</button></li>
     </ul>
+   <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search Tourist Place...">
+      <button onclick="searchInfo()">Search</button>
+      <button onclick="showHelp()">Help</button>
+   </div>
+   <div class="message" id="messageBox"></div>
   </nav>
   <div id="accountModal" class="modal">
     <div class="modal-contents">
@@ -136,7 +142,7 @@
 
     <section id="india_gate" class="card">
       <h3>2. India Gate</h3>
-      <div class="red-bar vertical"></div><br>
+      <div class="red-bar vertical"></div>
       <h4>Details</h4>
      <ol class="india-gate">
         <li><b>Built by – </b>Edwin Lutyens</li><br>
@@ -149,7 +155,7 @@
 
     <section id="qutub_minar" class="card">
       <h3>3. Qutub Minar</h3>
-      <div class="red-bar vertical"></div><br>
+      <div class="red-bar vertical"></div>
       <h4>Details</h4>
       <ol class="qutub_minar">
         <li><b>Built by – </b>Qutb-ud-din Aibak</li><br>
@@ -163,7 +169,7 @@
 
     <section id="humayuns_tomb" class="card">
       <h3>4. Humayun's Tomb</h3>
-      <div class="red-bar vertical"></div><br>
+      <div class="red-bar vertical"></div>
       <h4>Details</h4>
       <ol class="humayun_tomb">
         <li><b>Built by – </b>Empress Bega Begum</li><br>
@@ -177,7 +183,7 @@
 
     <section id="akshardham_temple" class="card">
       <h3>5. Akshardham Temple</h3>
-      <div class="red-bar vertical"></div><br>
+      <div class="red-bar vertical"></div>
       <h4>Details</h4>
       <ol class="akshardham_temple">
         <li><b>Built by – </b>BAPS</li><br>
@@ -191,7 +197,7 @@
 
     <section id="chhatarpur_temple" class="card">
       <h3>6. Chhatarpur Temple</h3>
-      <div class="red-bar vertical"></div><br>
+      <div class="red-bar vertical"></div>
       <h4>Details</h4>
       <ol class="chhatapur_temple">
         <li><b>Built by – </b>Fariborz Sahba</li><br>
@@ -204,7 +210,7 @@
 
     <section id="iskcon_temple" class="card">
       <h3>7. ISKCON Temple</h3>
-      <div class="red-bar vertical"></div><br>
+      <div class="red-bar vertical"></div>
       <h4>Details</h4>
       <ol class="iskcon_temple">
         <li><b>Built by – </b>Shah Jahan</li><br>
@@ -218,7 +224,7 @@
 
     <section id="lotus_temple" class="card">
       <h3>8. Lotus Temple</h3>
-      <div class="red-bar vertical"></div><br>
+      <div class="red-bar vertical"></div>
       <h4>Details</h4>
       <ol class="lotus_temple">
         <li><b>Built by – </b>Fariborz Sahba</li><br>
@@ -231,7 +237,7 @@
 
     <section id="jama_masjid" class="card">
       <h3>9. Jama Masjid</h3>
-      <div class="red-bar vertical"></div><br>
+      <div class="red-bar vertical"></div>
       <h4>Details</h4>
       <ol class="jama-masjid">
         <li><b>Built by – </b>Shah Jahan</li><br>
@@ -245,7 +251,7 @@
 
     <section id="rail_museum" class="card">
       <h3>10. National Rail Museum</h3>
-      <div class="red-bar vertical"></div><br>
+      <div class="red-bar vertical"></div>
       <h4>Details</h4>
       <ol class="national_museum">
         <li><b>Entry Fee – </b>₹20</li><br>
@@ -258,7 +264,7 @@
 
     <section id="rashtrapati_bhavan" class="card">
       <h3>11. Rashtrapati Bhavan</h3>
-      <div class="red-bar vertical"></div><br>
+      <div class="red-bar vertical"></div>
       <h4>Details</h4>
       <ol class="rashtrapati_bhavan">
         <li><b>Built by – </b>Sir Edwin Lutyens</li><br>
@@ -271,7 +277,7 @@
 
     <section id="jantar_mantar" class="card">
       <h3>12. Jantar Mantar</h3>
-      <div class="red-bar vertical"></div><br>
+      <div class="red-bar vertical"></div>
       <h4>Details</h4>
       <ol class="jantar_mantar">
         <li><b>Built by – </b>Maharaja Jai Singh II</li><br>
@@ -285,7 +291,7 @@
 
     <section id="purana_qila" class="card">
       <h3>13. Purana Qila</h3>
-      <div class="red-bar vertical"></div><br>
+      <div class="red-bar vertical"></div>
       <h4>Details</h4>
       <ol class="purana_qila">
         <li><b>Built by – </b>Sher Shah Suri</li><br>
@@ -299,7 +305,7 @@
 
     <section id="bangla_sahib" class="card">
       <h3>14. Gurudwara Bangla Sahib</h3>
-      <div class="red-bar vertical"></div><br>
+      <div class="red-bar vertical"></div>
       <h4>Details</h4>
       <ol class="bangla_sahib">
         <li><b>Built by – </b>General Sardar Bhagel Singh</li><br>
@@ -313,7 +319,7 @@
 
     <section id="raj_ghat" class="card">
       <h3>15. Raj Ghat</h3>
-      <div class="red-bar vertical"></div><br>
+      <div class="red-bar vertical"></div>
       <h4>Details</h4>
       <ol class="raj_ghat">
         <li><b>Built by – </b>Vanu G. Bhuta</li><br>
@@ -327,7 +333,7 @@
 
     <section id="hauz_khas" class="card">
       <h3>16. Hauz Khas Fort</h3>
-      <div class="red-bar vertical"></div><br>
+      <div class="red-bar vertical"></div>
       <h4>Details</h4>
       <ol class="hauz_khas_fort">
         <li><b>Built by – </b>Alauddin Khilji (14th century)</li><br>
@@ -341,7 +347,7 @@
 
     <section id="agrasen_baoli" class="card">
       <h3>17. Agrasen ki Baoli</h3>
-      <div class="red-bar vertical"></div><br>
+      <div class="red-bar vertical"></div>
       <h4>Details</h4>
       <ol class="agrasen_baoli">
         <li><b>Built by – </b>Raja Agrasen</li><br>
@@ -354,7 +360,7 @@
 
     <section id="nehru_park" class="card">
       <h3>18. Nehru Park</h3>
-      <div class="red-bar vertical"></div><br>
+      <div class="red-bar vertical"></div>
       <h4>Details</h4>
       <ol class="nehru_park">
         <li><b>Entry Fee – </b>Free</li><br>
@@ -367,7 +373,7 @@
 
     <section id="craft_museum" class="card">
       <h3>19. Craft Museum</h3>
-      <div class="red-bar vertical"></div><br>
+      <div class="red-bar vertical"></div>
       <h4>Details</h4>
       <ol class="craft_museum">
         <li><b>Entry Fee – </b>Free</li><br>
@@ -380,7 +386,7 @@
 
     <section id="chandni_chowk" class="card">
       <h3>20. Chandni Chowk</h3>
-      <div class="red-bar vertical"></div><br>
+      <div class="red-bar vertical"></div>
       <h4>Details</h4>
       <ol class="chandni_chowk">
         <li><b>Built by – </b>Shah Jahan</li><br>
@@ -393,7 +399,7 @@
 
     <section id="sarojini_nagar" class="card">
       <h3>21. Sarojini Nagar Market</h3>
-      <div class="red-bar vertical"></div><br>
+      <div class="red-bar vertical"></div>
       <h4>Details</h4>
       <ol class="sarojini_nagar_market">
         <li><b>Opening Hours – </b>10:00 AM – 9:00 PM, closed on Mondays</li><br>
@@ -405,7 +411,7 @@
 
     <section id="dilli_haat" class="card">
       <h3>22. Dilli Haat</h3>
-      <div class="red-bar vertical"></div><br>
+      <div class="red-bar vertical"></div>
       <h4>Details</h4>
       <ol class="dilli_haat">
         <li><b>Entry Fee – </b>₹20</li><br>
@@ -418,7 +424,7 @@
 
     <section id="national_museum" class="card">
       <h3>23. National Museum</h3>
-      <div class="red-bar vertical"></div><br>
+      <div class="red-bar vertical"></div>
       <h4>Details</h4>
       <ol class="national_museum">
         <li><b>Built by – </b>Ganesh Bhikaji Devolikar</li><br>
@@ -431,7 +437,7 @@
 
     <section id="khan_market" class="card">
       <h3>24. Khan Market</h3>
-      <div class="red-bar vertical"></div><br>
+      <div class="red-bar vertical"></div>
       <h4>Details</h4>
       <ol class="khan_market">
         <li><b>Opening Hours – </b>10:00 AM – 11:00 PM, closed Sunday</li><br>
@@ -442,7 +448,7 @@
 
     <section id="karol-bagh" class="card">
       <h3>25. Karol Bagh Market</h3>
-      <div class="red_bar vertical"></div><br>
+      <div class="red_bar vertical"></div>
       <h4>Details</h4>
       <ol class="karol_bagh_market">
         <li><b>Built by – </b>Shuja-ud-Daula</li><br>

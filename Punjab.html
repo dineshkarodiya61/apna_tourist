@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <nav class="navbar">
+ <nav class="navbar">
     <div class="logo">Apna Tourist</div>
     <div class="menu-toggle" id="menuToggle">
       <div></div><div></div><div></div>
@@ -22,6 +22,12 @@
       <li><button class="Account" id="createAccountBtn">Create Account</button></li>
       <li><button class="Login" id="loginModalBtn">Login</button></li>
     </ul>
+   <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search Tourist Place...">
+      <button onclick="searchInfo()">Search</button>
+      <button onclick="showHelp()">Help</button>
+   </div>
+   <div class="message" id="messageBox"></div>
   </nav>
   <div id="accountModal" class="modal">
     <div class="modal-contents">
@@ -102,7 +108,7 @@
 
     <section id="golden_temple" class="card">
       <h3>1. Golden Temple (Harmandir Sahib) – Amritsar</h3>
-      <div class="red-bar vertical"></div><br>
+      <div class="red-bar vertical"></div>
       <h4>Details</h4>
      <ol class="golden_temple_amritsar">
         <li><b>Built by – </b>Guru Arjan Dev Ji</li><br>
@@ -117,7 +123,7 @@
 
    <section id="wagah_border" class="card">
      <h3>2. Wagah Border – Amritsar</h3>
-     <div class="red-bar vertical"></div><br>
+     <div class="red-bar vertical"></div>
      <h4>Details</h4>
      <ol class="wagah_border_amritsar">
         <li><b>Famous for – </b>Beating Retreat Ceremony</li><br>
@@ -132,7 +138,7 @@
 
    <section id="jallianwala_bagh" class="card">
      <h3>3. Jallianwala Bagh – Amritsar</h3>
-     <div class="red-bar vertical"></div><br>
+     <div class="red-bar vertical"></div>
      <h4>Details</h4>
      <ol class="jallianwala_bagh_amritsar">
        <li><b>Built in Memory of – </b>Martyrs of the 1919 Massacre</li><br>

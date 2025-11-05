@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <nav class="navbar">
+<nav class="navbar">
     <div class="logo">Apna Tourist</div>
     <div class="menu-toggle" id="menuToggle">
       <div></div><div></div><div></div>
@@ -22,6 +22,12 @@
       <li><button class="Account" id="createAccountBtn">Create Account</button></li>
       <li><button class="Login" id="loginModalBtn">Login</button></li>
     </ul>
+   <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search Tourist Place...">
+      <button onclick="searchInfo()">Search</button>
+      <button onclick="showHelp()">Help</button>
+   </div>
+   <div class="message" id="messageBox"></div>
   </nav>
   <div id="accountModal" class="modal">
     <div class="modal-contents">
@@ -104,7 +110,7 @@
 
    <section id="taj_mahal" class="card">
      <h3>1. Taj Mahal – Agra</h3>
-     <div class="red-bar vertical"></div><br>
+     <div class="red-bar vertical"></div>
      <h4>Details</h4>
      <ol class="taj_mahal_agra">
        <li><b>Built by:</b> Emperor Shah Jahan</li><br>
@@ -119,7 +125,7 @@
 
    <section id="varanasi" class="card">
      <h3>2. Varanasi (Kashi) – Varanasi</h3>
-     <div class="red-bar vertical"></div><br>
+     <div class="red-bar vertical"></div>
      <h4>Details</h4>
      <ol class="varanasi_kashi">
        <li><b>Famous for:</b> Kashi Vishwanath Temple & Ganga Aarti</li><br>
@@ -134,7 +140,7 @@
 
    <section id="agra_fort" class="card">
      <h3>3. Agra Fort – Agra</h3>
-     <div class="red-bar vertical"></div><br>
+     <div class="red-bar vertical"></div>
      <h4>Details</h4>
      <ol class="agra_fort_agra">
        <li><b>Built by:</b> Emperor Akbar</li><br>
@@ -149,7 +155,7 @@
 
    <section id="mathura_vrindavan" class="card">
      <h3>4. Mathura & Vrindavan</h3>
-     <div class="red-bar vertical"></div><br>
+     <div class="red-bar vertical"></div>
      <h4>Details</h4>
      <ol class="mathura_vrindavan">
        <li><b>Famous for:</b> Birthplace of Lord Krishna</li><br>
@@ -164,7 +170,7 @@
 
    <section id="fatehpur_sikri" class="card">
      <h3>5. Fatehpur Sikri – Agra</h3>
-     <div class="red-bar vertical"></div><br>
+     <div class="red-bar vertical"></div>
      <h4>Details</h4>
      <ol class="fatehpur_sikri_agra">
        <li><b>Built by:</b> Emperor Akbar</li><br>
@@ -179,7 +185,7 @@
 
    <section id="ayodhya" class="card">
      <h3>6. Ayodhya</h3>
-     <div class="red-bar vertical"></div><br>
+     <div class="red-bar vertical"></div>
      <h4>Details</h4>
      <ol class="ayodhya">
        <li><b>Famous for:</b> Ram Janmabhoomi Temple</li><br>
@@ -194,7 +200,7 @@
 
    <section id="sarnath" class="card">
      <h3>7. Sarnath – Near Varanasi</h3>
-     <div class="red-bar vertical"></div><br>
+     <div class="red-bar vertical"></div>
      <h4>Details</h4>
      <ol class="sarnath_varanasi">
        <li><b>Famous for:</b> The place where Lord Buddha delivered his first sermon</li><br>

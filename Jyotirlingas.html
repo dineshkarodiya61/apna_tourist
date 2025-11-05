@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <nav class="navbar">
+<nav class="navbar">
     <div class="logo">Apna Tourist</div>
     <div class="menu-toggle" id="menuToggle">
       <div></div><div></div><div></div>
@@ -22,6 +22,12 @@
       <li><button class="Account" id="createAccountBtn">Create Account</button></li>
       <li><button class="Login" id="loginModalBtn">Login</button></li>
     </ul>
+   <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search Tourist Place...">
+      <button onclick="searchInfo()">Search</button>
+      <button onclick="showHelp()">Help</button>
+   </div>
+   <div class="message" id="messageBox"></div>
   </nav>
   <div id="accountModal" class="modal">
     <div class="modal-contents">
@@ -108,7 +114,7 @@
     </section>
         <section id="somnath" class="card">
      <h3>1. Somnath – Veraval, Gujarat</h3>
-     <div class="red-bar vertical"></div><br>
+     <div class="red-bar vertical"></div>
      <h4>Details</h4>
      <ol class="Somnath_Veraval">
        <li><b>Nearest Railway Station – </b>Veraval Railway Station</li><br>
@@ -121,7 +127,7 @@
 
    <section id="mallikarjuna" class="card">
      <h3>2. Mallikarjuna – Srisailam, Andhra Pradesh</h3>
-     <div class="red-bar vertical"></div><br>
+     <div class="red-bar vertical"></div>
      <h4>Details</h4>
      <ol class="Mallikarjuna_Srisailam">
        <li><b>Nearest Railway Station – </b>Markapur Road</li><br>
@@ -134,7 +140,7 @@
 
    <section id="mahakaleshwar" class="card">
      <h3>3. Mahakaleshwar – Ujjain, Madhya Pradesh</h3>
-     <div class="red-bar vertical"></div><br>
+     <div class="red-bar vertical"></div>
      <h4>Details</h4>
      <ol class="Mahakaleshwar_Ujjain">
        <li><b>Nearest Railway Station – </b>Ujjain Junction</li><br>
@@ -147,7 +153,7 @@
 
    <section id="omkareshwar" class="card">
      <h3>4. Omkareshwar – Khandwa, Madhya Pradesh</h3>
-     <div class="red-bar vertical"></div><br>
+     <div class="red-bar vertical"></div>
      <h4>Details</h4>
      <ol class="Omkareshwar_Khandwa">
        <li><b>Nearest Railway Station – </b>Omkareshwar Road</li><br>
@@ -160,7 +166,7 @@
 
    <section id="kedarnath" class="card">
      <h3>5. Kedarnath – Uttarakhand</h3>
-     <div class="red-bar vertical"></div><br>
+     <div class="red-bar vertical"></div>
      <h4>Details</h4>
      <ol class="Kedarnath_Uttarakhand">
        <li><b>Nearest Railway Station – </b>Rishikesh</li><br>
@@ -173,7 +179,7 @@
 
    <section id="bhimashankar" class="card">
      <h3>6. Bhimashankar – Pune, Maharashtra</h3>
-     <div class="red-bar vertical"></div><br>
+     <div class="red-bar vertical"></div>
      <h4>Details</h4>
      <ol class="Bhimashankar_Pune">
        <li><b>Nearest Railway Station – </b>Pune Junction</li><br>
@@ -186,7 +192,7 @@
 
    <section id="kashi_vishwanath" class="card">
       <h3>7. Kashi Vishwanath – Varanasi, Uttar Pradesh</h3>
-      <div class="red-bar vertical"></div><br>
+      <div class="red-bar vertical"></div>
       <h4>Details</h4>
       <ol class="Kashi_Vishwanath_Varanasi">
         <li><b>Nearest Railway Station – </b>Varanasi Junction</li><br>
@@ -199,7 +205,7 @@
 
     <section id="trimbakeshwar" class="card">
       <h3>8. Trimbakeshwar – Nashik, Maharashtra</h3>
-      <div class="red-bar vertical"></div><br>
+      <div class="red-bar vertical"></div>
       <h4>Details</h4>
       <ol class="Trimbakeshwar_Nashik">
         <li><b>Nearest Railway Station – </b>Nashik Road</li><br>
@@ -212,7 +218,7 @@
 
    <section id="vaidyanath" class="card">
       <h3>9. Vaidyanath – Deoghar, Jharkhand</h3>
-      <div class="red-bar vertical"></div><br>
+      <div class="red-bar vertical"></div>
       <h4>Details</h4>
      <ol class="Vaidyanath_Deoghar">
         <li><b>Nearest Railway Station – </b>Jasidih Junction</li><br>
@@ -225,7 +231,7 @@
 
    <section id="nageshwar" class="card">
       <h3>10. Nageshwar – Dwarka, Gujarat</h3>
-      <div class="red-bar vertical"></div><br>
+      <div class="red-bar vertical"></div>
       <h4>Details</h4>
      <ol class="Nageshwar_Dwarka">
         <li><b>Nearest Railway Station – </b>Dwarka Railway Station</li><br>
@@ -238,7 +244,7 @@
 
    <section id="ramanathaswamy" class="card">
       <h3>11. Ramanathaswamy – Rameswaram, Tamil Nadu</h3>
-      <div class="red-bar vertical"></div><br>
+      <div class="red-bar vertical"></div>
       <h4>Details</h4>
       <ol class="Ramanathaswamy_Rameswaram">
        <li><b>Nearest Railway Station – </b>Rameswaram Station</li><br>
@@ -251,7 +257,7 @@
 
     <section id="grishneshwar" class="card">
       <h3>12. Grishneshwar – Ellora, Maharashtra</h3>
-      <div class="red-bar vertical"></div><br>
+      <div class="red-bar vertical"></div>
       <h4>Details</h4>
      <ol class="Grishneshwar_Ellora">
         <li><b>Nearest Railway Station – </b>Aurangabad</li><br>

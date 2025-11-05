@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <nav class="navbar">
+<nav class="navbar">
     <div class="logo">Apna Tourist</div>
     <div class="menu-toggle" id="menuToggle">
       <div></div><div></div><div></div>
@@ -22,6 +22,12 @@
       <li><button class="Account" id="createAccountBtn">Create Account</button></li>
       <li><button class="Login" id="loginModalBtn">Login</button></li>
     </ul>
+   <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search Tourist Place...">
+      <button onclick="searchInfo()">Search</button>
+      <button onclick="showHelp()">Help</button>
+   </div>
+   <div class="message" id="messageBox"></div>
   </nav>
   <div id="accountModal" class="modal">
     <div class="modal-content">
@@ -104,7 +110,7 @@
 
        <section id="khajuraho_temples" class="card">
      <h3>1. Khajuraho Temples – Chhatarpur</h3>
-     <div class="red-bar vertical"></div><br>
+     <div class="red-bar vertical"></div>
      <h4>Details</h4>
      <ol class="khajuraho_temples_chhatarpur">
        <li><b>Built by:</b> Chandela Dynasty</li><br>
@@ -119,7 +125,7 @@
 
    <section id="kanha_national_park" class="card">
      <h3>2. Kanha National Park – Mandla</h3>
-     <div class="red-bar vertical"></div><br>
+     <div class="red-bar vertical"></div>
      <h4>Details</h4>
      <ol class="kanha_national_park_mandla">
        <li><b>Famous for:</b> Bengal Tigers and wildlife safari</li><br>
@@ -134,7 +140,7 @@
 
    <section id="gwalior_fort" class="card">
      <h3>3. Gwalior Fort – Gwalior</h3>
-     <div class="red-bar vertical"></div><br>
+     <div class="red-bar vertical"></div>
      <h4>Details</h4>
      <ol class="gwalior_fort_gwalior">
        <li><b>Built by:</b> Raja Man Singh Tomar</li><br>
@@ -149,7 +155,7 @@
 
    <section id="ujjain_mahakaleshwar" class="card">
      <h3>4. Ujjain – Mahakaleshwar Temple</h3>
-     <div class="red-bar vertical"></div><br>
+     <div class="red-bar vertical"></div>
      <h4>Details</h4>
      <ol class="ujjain_mahakaleshwar">
        <li><b>Famous for:</b> One of the 12 Jyotirlingas of Lord Shiva</li><br>
@@ -164,7 +170,7 @@
 
    <section id="sanchi_stupa" class="card">
      <h3>5. Sanchi Stupa – Raisen</h3>
-     <div class="red-bar vertical"></div><br>
+     <div class="red-bar vertical"></div>
      <h4>Details</h4>
      <ol class="sanchi_stupa_raisen">
        <li><b>Built by:</b> Emperor Ashoka (3rd century BCE)</li><br>
@@ -179,7 +185,7 @@
 
    <section id="pachmarhi_hill_station" class="card">
      <h3>6. Pachmarhi Hill Station</h3>
-     <div class="red-bar vertical"></div><br>
+     <div class="red-bar vertical"></div>
      <h4>Details</h4>
      <ol class="pachmarhi_hill_station">
        <li><b>Famous for:</b> Hill station, waterfalls, caves, and wildlife</li><br>
@@ -194,7 +200,7 @@
 
    <section id="bandhavgarh_national_park" class="card">
      <h3>7. Bandhavgarh National Park – Umaria</h3>
-     <div class="red-bar vertical"></div><br>
+     <div class="red-bar vertical"></div>
      <h4>Details</h4>
      <ol class="bandhavgarh_national_park">
        <li><b>Famous for:</b> Bengal Tigers and wildlife safari</li><br>

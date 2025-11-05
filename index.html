@@ -22,7 +22,14 @@
       <li><button class="Account" id="createAccountBtn">Create Account</button></li>
       <li><button class="Login" id="loginModalBtn">Login</button></li>
     </ul>
+   <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search Tourist Place...">
+      <button onclick="searchInfo()">Search</button>
+      <button onclick="showHelp()">Help</button>
+   </div>
+   <div class="message" id="messageBox"></div>
   </nav>
+
   <div id="accountModal" class="modal">
     <div class="modal-contents">
       <span class="close" id="closeAccountModal">&times;</span>
@@ -92,7 +99,7 @@
 
     <section id="tourist" class="card">
       <h2>Tourist Place</h2>
-      <div class="red-bar vertical"></div><br>
+      <div class="red-bar vertical"></div>
       <div class="tourist-plase">
         <span><a href="Rajsthan.html">Rajasthan</a></span><br>
         <span><a href="Jyotirlingas.html">Jyotirlingas</a></span><br>
